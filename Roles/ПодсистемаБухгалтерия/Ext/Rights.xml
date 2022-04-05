@@ -332,6 +332,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.СтатусОтправкиУКЗ</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonForm.ФормаПечатиДокумента</name>
 		<right>
 			<name>View</name>
@@ -369,6 +376,17 @@
 		</right>
 		<right>
 			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ПерепроведениеРасходныхНакладных</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -1777,7 +1795,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ОтветсвенныйЗаКалькуляцию</name>
+		<name>Constant.ОтветственныйЗаКалькуляцию</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

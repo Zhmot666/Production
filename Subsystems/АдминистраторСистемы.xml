@@ -15,7 +15,7 @@
 			<Explanation/>
 			<Picture>
 				<xr:Ref>CommonPicture.Администратор</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНоменклатуры</xr:Item>
@@ -101,12 +101,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.Образование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.КатегорииРаботающих</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализДвиженияДенежныхСредств</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаВXML</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольЗапросов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДатаМарк</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетОбИспользованиеКонтрольныхЗнаков</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.УчетУКЗ</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусОтправкиОтчетаПоУКЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПерепроведениеРасходныхНакладных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УсловияТранспортировки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИнформацияОбИдентификации</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

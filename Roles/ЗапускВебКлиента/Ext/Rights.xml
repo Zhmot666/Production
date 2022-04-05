@@ -29,10 +29,6 @@
 			<name>MainWindowModeKiosk</name>
 			<value>false</value>
 		</right>
-		<right>
-			<name>AnalyticsSystemClient</name>
-			<value>true</value>
-		</right>
 	</object>
 	<object>
 		<name>HTTPService.ВыгрузкиДокументов.URLTemplate.ProductionList.Method.GET</name>

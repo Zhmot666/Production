@@ -17,7 +17,7 @@
 		<property name="КоличествоВыпуска" type="xs:decimal"/>
 		<property name="ВидПродукцииВидНоменклатуры" type="xs:string"/>
 		<property name="ПризнакИзменения" type="xs:boolean"/>
-		<property name="Ответсвенный" type="xs:string"/>
+		<property name="Ответственный" type="xs:string"/>
 	</objectType>
 	<objectType name="ДокументСписания">
 		<property name="НомерДокумента" type="xs:string"/>

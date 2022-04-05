@@ -15,7 +15,7 @@
 			<Explanation/>
 			<Picture>
 				<xr:Ref>CommonPicture.Бухгалтерия</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Подразделения</xr:Item>
@@ -38,6 +38,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОстаткиКЗ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетОбИспользованиеКонтрольныхЗнаков</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.УчетУКЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПерепроведениеРасходныхНакладных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

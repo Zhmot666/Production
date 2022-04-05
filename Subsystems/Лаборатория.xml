@@ -15,18 +15,21 @@
 			<Explanation/>
 			<Picture>
 				<xr:Ref>CommonPicture.Лаборатория</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПротоколИспытаний</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.УдостоверениеКачества</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УсловияИспытаний</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОборудованиеЛаборатории</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидКонтроля</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.Производство</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипЗадолженности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОИсследованиях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусИспытаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Списание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Производство</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>Журналы</Subsystem>
+			<Subsystem>Справочники</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

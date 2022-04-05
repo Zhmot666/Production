@@ -69,10 +69,10 @@
 							<ContextMenu name="ГрузСдалКонтекстноеМеню" id="51"/>
 							<ExtendedTooltip name="ГрузСдалРасширеннаяПодсказка" id="52"/>
 						</InputField>
-						<InputField name="ОтветсвенныйЗаКалькуляцию" id="80">
-							<DataPath>НаборКонстант.ОтветсвенныйЗаКалькуляцию</DataPath>
-							<ContextMenu name="ОтветсвенныйЗаКалькуляциюКонтекстноеМеню" id="81"/>
-							<ExtendedTooltip name="ОтветсвенныйЗаКалькуляциюРасширеннаяПодсказка" id="82"/>
+						<InputField name="ОтветственныйЗаКалькуляцию" id="80">
+							<DataPath>НаборКонстант.ОтветственныйЗаКалькуляцию</DataPath>
+							<ContextMenu name="ОтветственныйЗаКалькуляциюКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ОтветственныйЗаКалькуляциюРасширеннаяПодсказка" id="82"/>
 						</InputField>
 					</ChildItems>
 				</Page>
@@ -164,7 +164,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Рег. данные в других ситетмах</v8:content>
+							<v8:content>Рег. данные в других систетмах</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>

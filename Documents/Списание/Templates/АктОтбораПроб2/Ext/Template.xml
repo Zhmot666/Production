@@ -145,6 +145,7 @@
 	<rowsItem>
 		<index>0</index>
 		<row>
+			<formatIndex>15</formatIndex>
 			<empty>true</empty>
 		</row>
 	</rowsItem>
@@ -152,11 +153,11 @@
 		<index>1</index>
 		<row>
 			<columnsID>6c3fc751-f06d-4052-80b4-2e384b96afc6</columnsID>
-			<formatIndex>15</formatIndex>
+			<formatIndex>16</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>16</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -176,11 +177,11 @@
 	<rowsItem>
 		<index>3</index>
 		<row>
-			<formatIndex>17</formatIndex>
+			<formatIndex>18</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>18</f>
+					<f>19</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -195,11 +196,11 @@
 		<index>4</index>
 		<row>
 			<columnsID>6aefbcd1-1669-4715-81fd-15c37f5e38ff</columnsID>
-			<formatIndex>17</formatIndex>
+			<formatIndex>18</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -214,15 +215,15 @@
 		<index>5</index>
 		<row>
 			<columnsID>6aefbcd1-1669-4715-81fd-15c37f5e38ff</columnsID>
-			<formatIndex>17</formatIndex>
+			<formatIndex>18</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>20</f>
+					<f>21</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Нами, [ОтбиравшийПробу.Должность] [ОтбиравшийПробу]</v8:content>
+							<v8:content>Мною, [ОтбиравшийПробу.Должность] [ОтбиравшийПробу]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -233,11 +234,11 @@
 		<index>6</index>
 		<row>
 			<columnsID>6aefbcd1-1669-4715-81fd-15c37f5e38ff</columnsID>
-			<formatIndex>17</formatIndex>
+			<formatIndex>18</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>21</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -252,11 +253,11 @@
 		<index>7</index>
 		<row>
 			<columnsID>6aefbcd1-1669-4715-81fd-15c37f5e38ff</columnsID>
-			<formatIndex>17</formatIndex>
+			<formatIndex>18</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>22</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -267,12 +268,12 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>24</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>25</f>
 				</c>
 			</c>
 		</row>
@@ -281,11 +282,11 @@
 		<index>8</index>
 		<row>
 			<columnsID>6aefbcd1-1669-4715-81fd-15c37f5e38ff</columnsID>
-			<formatIndex>17</formatIndex>
+			<formatIndex>18</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>25</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -296,12 +297,12 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>24</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>25</f>
 				</c>
 			</c>
 		</row>
@@ -310,11 +311,11 @@
 		<index>9</index>
 		<row>
 			<columnsID>6aefbcd1-1669-4715-81fd-15c37f5e38ff</columnsID>
-			<formatIndex>17</formatIndex>
+			<formatIndex>18</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>26</f>
+					<f>27</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -327,23 +328,41 @@
 	</rowsItem>
 	<rowsItem>
 		<index>10</index>
-		<indexTo>12</indexTo>
+		<indexTo>11</indexTo>
 		<row>
 			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>18</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор проб произведен в соответствии с требованиями ГОСТ 13979.0-86</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
 		<index>13</index>
 		<row>
 			<columnsID>97602a07-79e3-42af-8b9f-a7be9590f4b0</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<c>
-					<f>27</f>
+					<f>28</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -354,7 +373,7 @@
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -365,7 +384,7 @@
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -376,7 +395,7 @@
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -387,7 +406,7 @@
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -398,7 +417,7 @@
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -413,28 +432,29 @@
 		<index>14</index>
 		<row>
 			<columnsID>97602a07-79e3-42af-8b9f-a7be9590f4b0</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>29</f>
+					<f>30</f>
 					<parameter>НомерСтроки</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>31</f>
 					<parameter>НаименованиеПроб</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>32</f>
 					<parameter>ЕдиницыИзмерения</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>31</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -445,13 +465,13 @@
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>32</f>
 					<parameter>ДатаИзготовления</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>34</f>
 					<parameter>ВесПробы</parameter>
 				</c>
 			</c>
@@ -468,10 +488,11 @@
 		<index>17</index>
 		<row>
 			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>33</f>
+					<f>35</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -486,10 +507,11 @@
 		<index>18</index>
 		<row>
 			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>34</f>
+					<f>36</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -505,15 +527,16 @@
 		<index>19</index>
 		<row>
 			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>35</f>
+					<f>37</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>38</f>
 				</c>
 			</c>
 		</row>
@@ -522,10 +545,11 @@
 		<index>20</index>
 		<row>
 			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>37</f>
+					<f>39</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -536,30 +560,13 @@
 			</c>
 			<c>
 				<c>
-					<f>38</f>
-					<parameter>ОтбиравшийПробу</parameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>39</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>21</index>
-		<row>
-			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
-			<c>
-				<i>1</i>
-				<c>
-					<f>37</f>
-				</c>
-			</c>
-			<c>
-				<c>
 					<f>40</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[ОтбиравшийПробу.Должность] [ОтбиравшийПробу]</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
@@ -570,13 +577,37 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>22</index>
+		<index>21</index>
 		<row>
 			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>37</f>
+					<f>39</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>42</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>43</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>22</index>
+		<row>
+			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
+			<formatIndex>15</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>39</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -587,8 +618,13 @@
 			</c>
 			<c>
 				<c>
-					<f>42</f>
-					<parameter>Представитель</parameter>
+					<f>44</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[Представитель.Должность] [Представитель]</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -597,20 +633,21 @@
 		<index>23</index>
 		<row>
 			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>37</f>
+					<f>39</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>40</f>
+					<f>42</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>41</f>
+					<f>43</f>
 				</c>
 			</c>
 		</row>
@@ -619,20 +656,21 @@
 		<index>24</index>
 		<row>
 			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>37</f>
+					<f>39</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>40</f>
+					<f>42</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>41</f>
+					<f>43</f>
 				</c>
 			</c>
 		</row>
@@ -641,27 +679,28 @@
 		<index>25</index>
 		<row>
 			<columnsID>937fb02e-1b63-44dc-90f2-2029cf167cc1</columnsID>
+			<formatIndex>15</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>43</f>
+					<f>45</f>
 					<parameter>Дата</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>39</f>
+					<f>41</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>40</f>
+					<f>42</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>44</defaultFormatIndex>
+	<defaultFormatIndex>46</defaultFormatIndex>
 	<height>26</height>
 	<vgRows>26</vgRows>
 	<merge>
@@ -698,6 +737,11 @@
 		<r>9</r>
 		<c>1</c>
 		<w>2</w>
+	</merge>
+	<merge>
+		<r>12</r>
+		<c>1</c>
+		<w>8</w>
 	</merge>
 	<merge>
 		<r>17</r>
@@ -779,117 +823,138 @@
 	<line width="1" gap="false">
 		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
 	</line>
-	<font faceName="Arial" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-	<font faceName="Arial" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-	<font ref="style:SmallTextFont" kind="StyleItem"/>
-	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-	<font faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Times New Roman" height="8" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Times New Roman" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Times New Roman" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Times New Roman" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font ref="style:SmallTextFont" faceName="Times New Roman" kind="StyleItem" scale="100"/>
+	<font faceName="Times New Roman" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Times New Roman" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
+		<font>0</font>
 		<width>16</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>177</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>752</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>182</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>0</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>570</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>33</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>320</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>56</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>172</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>95</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>77</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>153</width>
 	</format>
 	<format>
+		<font>0</font>
 		<width>601</width>
 	</format>
 	<format>
 		<font>0</font>
 	</format>
 	<format>
-		<horizontalAlignment>Center</horizontalAlignment>
-		<textPlacement>Wrap</textPlacement>
-	</format>
-	<format>
 		<font>1</font>
-	</format>
-	<format>
-		<font>1</font>
-		<fillType>Template</fillType>
 	</format>
 	<format>
 		<font>2</font>
 		<horizontalAlignment>Center</horizontalAlignment>
+		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<font>3</font>
+	</format>
+	<format>
+		<font>3</font>
+		<fillType>Template</fillType>
+	</format>
+	<format>
+		<font>4</font>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
-		<font>1</font>
+		<font>3</font>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 	</format>
 	<format>
-		<font>2</font>
+		<font>4</font>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
-		<font>1</font>
+		<font>3</font>
 		<width>182</width>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 	</format>
 	<format>
-		<font>1</font>
+		<font>3</font>
 		<width>0</width>
 	</format>
 	<format>
-		<font>1</font>
+		<font>3</font>
 		<width>459</width>
 	</format>
 	<format>
-		<font>2</font>
+		<font>4</font>
 		<width>182</width>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
-		<font>1</font>
+		<font>3</font>
 		<horizontalAlignment>Justify</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 	</format>
 	<format>
+		<font>0</font>
 		<columnSizeChange>QuickChange</columnSizeChange>
 	</format>
 	<format>
-		<font>3</font>
+		<font>5</font>
 		<border>0</border>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
@@ -897,14 +962,16 @@
 		<columnSizeChange>QuickChange</columnSizeChange>
 	</format>
 	<format>
+		<font>0</font>
 		<border>0</border>
-		<horizontalAlignment>Right</horizontalAlignment>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Block</textPlacement>
 		<fillType>Parameter</fillType>
 		<markNegatives>false</markNegatives>
 	</format>
 	<format>
+		<font>0</font>
 		<border>0</border>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
@@ -912,15 +979,27 @@
 		<markNegatives>false</markNegatives>
 	</format>
 	<format>
+		<font>0</font>
 		<border>0</border>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+		<markNegatives>false</markNegatives>
+	</format>
+	<format>
+		<font>0</font>
+		<border>0</border>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 		<markNegatives>false</markNegatives>
 	</format>
 	<format>
+		<font>0</font>
 		<border>0</border>
-		<horizontalAlignment>Right</horizontalAlignment>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Block</textPlacement>
 		<fillType>Parameter</fillType>
@@ -933,69 +1012,74 @@
 		</format>
 	</format>
 	<format>
-		<font>1</font>
+		<font>3</font>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
-		<font>1</font>
+		<font>3</font>
 		<horizontalAlignment>Justify</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
+		<font>0</font>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
+		<font>0</font>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<markNegatives>false</markNegatives>
 	</format>
 	<format>
-		<font>4</font>
+		<font>6</font>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
-		<font>4</font>
+		<font>6</font>
 		<width>0</width>
 		<horizontalAlignment>Right</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
-		<fillType>Parameter</fillType>
+		<fillType>Template</fillType>
 		<markNegatives>false</markNegatives>
 	</format>
 	<format>
+		<font>0</font>
 		<width>486</width>
 	</format>
 	<format>
-		<font>4</font>
+		<font>6</font>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<markNegatives>false</markNegatives>
 	</format>
 	<format>
-		<font>4</font>
+		<font>6</font>
 	</format>
 	<format>
-		<font>4</font>
+		<font>6</font>
 		<horizontalAlignment>Right</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
-		<fillType>Parameter</fillType>
+		<fillType>Template</fillType>
 		<markNegatives>false</markNegatives>
 	</format>
 	<format>
-		<font>4</font>
+		<font>6</font>
 		<width>0</width>
 		<verticalAlignment>Top</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
 		<markNegatives>false</markNegatives>
+		<format/>
 	</format>
 	<format>
+		<font>0</font>
 		<width>72</width>
 	</format>
 </document>

@@ -82,7 +82,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0</Command>
+				<Command>1:681ca864-5ec0-40e9-ba3a-da3851acecd0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

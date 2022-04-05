@@ -1028,6 +1028,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.ПерепроведениеРасходныхНакладных</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.НормыСписанияПродукции.Dimension.НижнийПредел</name>
 		<right>
 			<name>Edit</name>
@@ -5557,7 +5568,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ОтветсвенныйЗаКалькуляцию</name>
+		<name>Constant.ОтветственныйЗаКалькуляцию</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

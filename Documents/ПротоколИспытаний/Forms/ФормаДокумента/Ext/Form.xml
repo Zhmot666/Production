@@ -72,6 +72,14 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="ДокументОтбораПроб" id="197">
+							<DataPath>Объект.ДокументОтбораПроб</DataPath>
+							<ContextMenu name="ДокументОтбораПробКонтекстноеМеню" id="198"/>
+							<ExtendedTooltip name="ДокументОтбораПробРасширеннаяПодсказка" id="199"/>
+							<Events>
+								<Event name="OnChange">ДокументОтбораПробПриИзменении</Event>
+							</Events>
+						</InputField>
 						<UsualGroup name="ГруппыНормативыИПартия" id="170">
 							<Title>
 								<v8:item>
@@ -132,24 +140,82 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПартияРасширеннаяПодсказка" id="175"/>
 									<ChildItems>
-										<InputField name="РазмерПартии" id="19">
-											<DataPath>Объект.РазмерПартии</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="РазмерПартииКонтекстноеМеню" id="20"/>
-											<ExtendedTooltip name="РазмерПартииРасширеннаяПодсказка" id="21"/>
-										</InputField>
-										<InputField name="ОбъемВыборки" id="22">
-											<DataPath>Объект.ОбъемВыборки</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОбъемВыборкиКонтекстноеМеню" id="23"/>
-											<ExtendedTooltip name="ОбъемВыборкиРасширеннаяПодсказка" id="24"/>
-										</InputField>
-										<InputField name="АктОтбораПроб" id="25">
-											<DataPath>Объект.АктОтбораПроб</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="АктОтбораПробКонтекстноеМеню" id="26"/>
-											<ExtendedTooltip name="АктОтбораПробРасширеннаяПодсказка" id="27"/>
-										</InputField>
+										<UsualGroup name="НомерРазмер" id="301">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер размер</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="НомерРазмерРасширеннаяПодсказка" id="302"/>
+											<ChildItems>
+												<InputField name="НомерПартии" id="298">
+													<DataPath>Объект.НомерПартии</DataPath>
+													<ContextMenu name="НомерПартииКонтекстноеМеню" id="299"/>
+													<ExtendedTooltip name="НомерПартииРасширеннаяПодсказка" id="300"/>
+												</InputField>
+												<InputField name="РазмерПартии" id="19">
+													<DataPath>Объект.РазмерПартии</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="РазмерПартииКонтекстноеМеню" id="20"/>
+													<ExtendedTooltip name="РазмерПартииРасширеннаяПодсказка" id="21"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="РозливИзготовление" id="303">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Розлив изготовление</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="РозливИзготовлениеРасширеннаяПодсказка" id="304"/>
+											<ChildItems>
+												<InputField name="ДатаРозлива" id="305">
+													<DataPath>Объект.ДатаРозлива</DataPath>
+													<ContextMenu name="ДатаРозливаКонтекстноеМеню" id="306"/>
+													<ExtendedTooltip name="ДатаРозливаРасширеннаяПодсказка" id="307"/>
+												</InputField>
+												<InputField name="ДатаИзготовления" id="308">
+													<DataPath>Объект.ДатаИзготовления</DataPath>
+													<ContextMenu name="ДатаИзготовленияКонтекстноеМеню" id="309"/>
+													<ExtendedTooltip name="ДатаИзготовленияРасширеннаяПодсказка" id="310"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="АктОбъем" id="311">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Акт объем</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="АктОбъемРасширеннаяПодсказка" id="312"/>
+											<ChildItems>
+												<InputField name="ОбъемВыборки" id="22">
+													<DataPath>Объект.ОбъемВыборки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОбъемВыборкиКонтекстноеМеню" id="23"/>
+													<ExtendedTooltip name="ОбъемВыборкиРасширеннаяПодсказка" id="24"/>
+												</InputField>
+												<InputField name="АктОтбораПроб" id="25">
+													<DataPath>Объект.АктОтбораПроб</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АктОтбораПробКонтекстноеМеню" id="26"/>
+													<ExtendedTooltip name="АктОтбораПробРасширеннаяПодсказка" id="27"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 										<InputField name="ВидУпаковки" id="28">
 											<DataPath>Объект.ВидУпаковки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -362,7 +428,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Номинальный объем</v8:content>
+							<v8:content>1. Номинальный объем</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="ГруппаНоминальныйОбъемРасширеннаяПодсказка" id="97"/>
@@ -499,6 +565,404 @@
 						</UsualGroup>
 					</ChildItems>
 				</Page>
+				<Page name="ПрограммаИспытаний" id="200">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2. Программа испытаний</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Программа испытаний</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ПрограммаИспытанийРасширеннаяПодсказка" id="201"/>
+					<ChildItems>
+						<UsualGroup name="ЛевыйСтолбик" id="232">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Левый столбик</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЛевыйСтолбикРасширеннаяПодсказка" id="233"/>
+							<ChildItems>
+								<UsualGroup name="ГрпЖурнал3" id="240">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал3</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал3</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал3РасширеннаяПодсказка" id="241"/>
+									<ChildItems>
+										<InputField name="Журнал3" id="202">
+											<DataPath>Объект.Журнал3</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал3КонтекстноеМеню" id="203"/>
+											<ExtendedTooltip name="Журнал3РасширеннаяПодсказка" id="204"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ3" id="236">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ3РасширеннаяПодсказка" id="237"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ3" id="238">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ3РасширеннаяПодсказка" id="239"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГрпЖурнал4" id="242">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал4</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал4</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал4РасширеннаяПодсказка" id="243"/>
+									<ChildItems>
+										<InputField name="Журнал4" id="205">
+											<DataPath>Объект.Журнал4</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал4КонтекстноеМеню" id="206"/>
+											<ExtendedTooltip name="Журнал4РасширеннаяПодсказка" id="207"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ4" id="252">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ4РасширеннаяПодсказка" id="253"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ4" id="254">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ4РасширеннаяПодсказка" id="255"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГрпЖурнал5" id="244">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал5</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал5РасширеннаяПодсказка" id="245"/>
+									<ChildItems>
+										<InputField name="Журнал5" id="229">
+											<DataPath>Объект.Журнал5</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал5КонтекстноеМеню" id="230"/>
+											<ExtendedTooltip name="Журнал5РасширеннаяПодсказка" id="231"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ5" id="258">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ5РасширеннаяПодсказка" id="259"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ5" id="256">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ5РасширеннаяПодсказка" id="257"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГрпЖурнал6" id="246">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал6</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал6РасширеннаяПодсказка" id="247"/>
+									<ChildItems>
+										<InputField name="Журнал6" id="208">
+											<DataPath>Объект.Журнал6</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал6КонтекстноеМеню" id="209"/>
+											<ExtendedTooltip name="Журнал6РасширеннаяПодсказка" id="210"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ6" id="262">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ6РасширеннаяПодсказка" id="263"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ6" id="260">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ6РасширеннаяПодсказка" id="261"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГрпЖурнал71" id="250">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал71</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал71РасширеннаяПодсказка" id="251"/>
+									<ChildItems>
+										<InputField name="Журнал71" id="211">
+											<DataPath>Объект.Журнал71</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал71КонтекстноеМеню" id="212"/>
+											<ExtendedTooltip name="Журнал71РасширеннаяПодсказка" id="213"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ71" id="266">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ71РасширеннаяПодсказка" id="267"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ71" id="264">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ71РасширеннаяПодсказка" id="265"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ПравыйСтолбик" id="234">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правый столбик</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПравыйСтолбикРасширеннаяПодсказка" id="235"/>
+							<ChildItems>
+								<UsualGroup name="ГрпЖурнал72" id="268">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал71</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал72РасширеннаяПодсказка" id="269"/>
+									<ChildItems>
+										<InputField name="Журнал72" id="214">
+											<DataPath>Объект.Журнал72</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал72КонтекстноеМеню" id="215"/>
+											<ExtendedTooltip name="Журнал72РасширеннаяПодсказка" id="216"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ72" id="272">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ72РасширеннаяПодсказка" id="273"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ72" id="270">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ72РасширеннаяПодсказка" id="271"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГрпЖурнал8" id="274">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал8</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал8РасширеннаяПодсказка" id="275"/>
+									<ChildItems>
+										<InputField name="Журнал8" id="217">
+											<DataPath>Объект.Журнал8</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал8КонтекстноеМеню" id="218"/>
+											<ExtendedTooltip name="Журнал8РасширеннаяПодсказка" id="219"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ8" id="282">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ8РасширеннаяПодсказка" id="283"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ8" id="284">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ8РасширеннаяПодсказка" id="285"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГрпЖурнал9" id="276">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал9</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал9РасширеннаяПодсказка" id="277"/>
+									<ChildItems>
+										<InputField name="Журнал9" id="220">
+											<DataPath>Объект.Журнал9</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал9КонтекстноеМеню" id="221"/>
+											<ExtendedTooltip name="Журнал9РасширеннаяПодсказка" id="222"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ9" id="286">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ9РасширеннаяПодсказка" id="287"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ9" id="288">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ9РасширеннаяПодсказка" id="289"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГрпЖурнал91" id="278">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал91</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал91РасширеннаяПодсказка" id="279"/>
+									<ChildItems>
+										<InputField name="Журнал91" id="223">
+											<DataPath>Объект.Журнал91</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал91КонтекстноеМеню" id="224"/>
+											<ExtendedTooltip name="Журнал91РасширеннаяПодсказка" id="225"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ91" id="290">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ91РасширеннаяПодсказка" id="291"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ91" id="292">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ91РасширеннаяПодсказка" id="293"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГрпЖурнал10" id="280">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Грп журнал10</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГрпЖурнал10РасширеннаяПодсказка" id="281"/>
+									<ChildItems>
+										<InputField name="Журнал10" id="226">
+											<DataPath>Объект.Журнал10</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<DropListButton>false</DropListButton>
+											<OpenButton>false</OpenButton>
+											<ContextMenu name="Журнал10КонтекстноеМеню" id="227"/>
+											<ExtendedTooltip name="Журнал10РасширеннаяПодсказка" id="228"/>
+										</InputField>
+										<Button name="СоздатьДокументЖ10" id="294">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.СоздатьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="СоздатьДокументЖ10РасширеннаяПодсказка" id="295"/>
+										</Button>
+										<Button name="РедактироватьДокументЖ10" id="296">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.РедактироватьДокументЖурнала</CommandName>
+											<ExtendedTooltip name="РедактироватьДокументЖ10РасширеннаяПодсказка" id="297"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
 				<Page name="ГруппаПрограммаПроведенияИспытаний" id="126">
 					<Title>
 						<v8:item>
@@ -617,4 +1081,43 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="СоздатьДокументЖурнала" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документ журнала</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документ журнала</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionNewNestedScheme</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьДокументЖурнала</Action>
+		</Command>
+		<Command name="РедактироватьДокументЖурнала" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать документ журнала</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать документ журнала</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SpreadsheetReadOnly</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
+	</Commands>
 </Form>

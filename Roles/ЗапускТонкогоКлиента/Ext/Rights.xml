@@ -29,8 +29,15 @@
 			<name>MainWindowModeKiosk</name>
 			<value>false</value>
 		</right>
+	</object>
+	<object>
+		<name>DataProcessor.ПерепроведениеРасходныхНакладных</name>
 		<right>
-			<name>AnalyticsSystemClient</name>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

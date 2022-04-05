@@ -186,6 +186,170 @@
 						</InputField>
 					</ChildItems>
 				</Page>
+				<Page name="Падежи" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Падежи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Падежи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ПадежиРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<UsualGroup name="ФамилияИмяОтчетсво" id="92">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Фамилия, имя, отчетсво</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Фамилия имя отчетсво</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ФамилияИмяОтчетсвоРасширеннаяПодсказка" id="93"/>
+							<ChildItems>
+								<InputField name="НаименованиеРодительный" id="89">
+									<DataPath>Объект.НаименованиеРодительный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Родительный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НаименованиеРодительныйКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="НаименованиеРодительныйРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<InputField name="НаименованиеДательный" id="62">
+									<DataPath>Объект.НаименованиеДательный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дательный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НаименованиеДательныйКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="НаименованиеДательныйРасширеннаяПодсказка" id="64"/>
+								</InputField>
+								<InputField name="НаименованиеВинительный" id="65">
+									<DataPath>Объект.НаименованиеВинительный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Винительный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НаименованиеВинительныйКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="НаименованиеВинительныйРасширеннаяПодсказка" id="67"/>
+								</InputField>
+								<InputField name="НаименованиеТворительный" id="68">
+									<DataPath>Объект.НаименованиеТворительный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Творительный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НаименованиеТворительныйКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="НаименованиеТворительныйРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="НаименованиеПредложный" id="71">
+									<DataPath>Объект.НаименованиеПредложный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предложный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НаименованиеПредложныйКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="НаименованиеПредложныйРасширеннаяПодсказка" id="73"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ФаимилияИИнциалы" id="94">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Фаимилия и инциалы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Фаимилия и инциалы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ФаимилияИИнциалыРасширеннаяПодсказка" id="95"/>
+							<ChildItems>
+								<InputField name="ФамилияИнициалыРодительный" id="74">
+									<DataPath>Объект.ФамилияИнициалыРодительный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Родительный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ФамилияИнициалыРодительныйКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ФамилияИнициалыРодительныйРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="ФамилияИнициалыДательный" id="77">
+									<DataPath>Объект.ФамилияИнициалыДательный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дательный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ФамилияИнициалыДательныйКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ФамилияИнициалыДательныйРасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<InputField name="ФамилияИнициалыВинительный" id="80">
+									<DataPath>Объект.ФамилияИнициалыВинительный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Винительный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ФамилияИнициалыВинительныйКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ФамилияИнициалыВинительныйРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="ФамилияИнициалыТворительный" id="83">
+									<DataPath>Объект.ФамилияИнициалыТворительный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Творительный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ФамилияИнициалыТворительныйКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ФамилияИнициалыТворительныйРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ФамилияИнициалыПредложный" id="86">
+									<DataPath>Объект.ФамилияИнициалыПредложный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предложный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ФамилияИнициалыПредложныйКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ФамилияИнициалыПредложныйРасширеннаяПодсказка" id="88"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>

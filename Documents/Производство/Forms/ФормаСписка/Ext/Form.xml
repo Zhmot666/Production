@@ -20,24 +20,13 @@
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
 		<Table name="Список" id="3">
-			<Representation>List</Representation>
-			<CommandBarLocation>None</CommandBarLocation>
-			<DefaultItem>true</DefaultItem>
 			<HeaderHeight>2</HeaderHeight>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
-			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
-			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Список документов по производству</v8:content>
-				</v8:item>
-			</Title>
-			<AutoRefresh>false</AutoRefresh>
-			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<AutoRefresh>true</AutoRefresh>
+			<AutoRefreshPeriod>30</AutoRefreshPeriod>
 			<Period>
 				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
 				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
@@ -49,7 +38,6 @@
 			<ShowRoot>true</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
-			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
 			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
 				<Autofill>false</Autofill>
@@ -80,98 +68,73 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<CheckBoxField name="Проведен" id="40">
-					<DataPath>Список.Posted</DataPath>
-					<Visible>false</Visible>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ПроведенКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="ПроведенРасширеннаяПодсказка" id="42"/>
-				</CheckBoxField>
-				<LabelField name="Дата" id="16">
-					<DataPath>Список.Date</DataPath>
-					<DefaultItem>true</DefaultItem>
+				<CheckBoxField name="Проведен" id="34">
+					<DataPath>Список.Проведен</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата начала выпуска партии</v8:content>
+							<v8:content>Прове-
+ден</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
-				</LabelField>
-				<LabelField name="Номер" id="19">
-					<DataPath>Список.Number</DataPath>
-					<ContextMenu name="НомерКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="21"/>
-				</LabelField>
-				<LabelField name="СтатусОтправкиОтчетаПоУКЗ" id="49">
-					<DataPath>Список.СтатусОтправкиОтчетаПоУКЗ</DataPath>
-					<ContextMenu name="СтатусОтправкиОтчетаПоУКЗКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="СтатусОтправкиОтчетаПоУКЗРасширеннаяПодсказка" id="51"/>
-				</LabelField>
-				<LabelField name="Ссылка" id="46">
-					<DataPath>Список.Ref</DataPath>
-					<Visible>false</Visible>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
-					<ContextMenu name="СсылкаКонтекстноеМеню" id="47"/>
-					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="48"/>
-				</LabelField>
-				<LabelField name="НомерПартии" id="34">
-					<DataPath>Список.НомерПартии</DataPath>
-					<ContextMenu name="НомерПартииКонтекстноеМеню" id="35"/>
-					<ExtendedTooltip name="НомерПартииРасширеннаяПодсказка" id="36"/>
-				</LabelField>
-				<LabelField name="ВидПродукции" id="22">
-					<DataPath>Список.ВидПродукции</DataPath>
-					<ContextMenu name="ВидПродукцииКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ВидПродукцииРасширеннаяПодсказка" id="24"/>
-				</LabelField>
-				<LabelField name="ПланируемоеКоличество" id="25">
-					<DataPath>Список.ПланируемоеКоличество</DataPath>
-					<ContextMenu name="ПланируемоеКоличествоКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="ПланируемоеКоличествоРасширеннаяПодсказка" id="27"/>
-				</LabelField>
-				<LabelField name="СсылкаЭтапыПроизводстваИтогКоличествоВыпуска" id="31">
-					<ContextMenu name="СсылкаЭтапыПроизводстваИтогКоличествоВыпускаКонтекстноеМеню" id="32"/>
-					<ExtendedTooltip name="СсылкаЭтапыПроизводстваИтогКоличествоВыпускаРасширеннаяПодсказка" id="33"/>
-				</LabelField>
-				<LabelField name="Статус" id="37">
-					<DataPath>Список.Статус</DataPath>
-					<ContextMenu name="СтатусКонтекстноеМеню" id="38"/>
-					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="39"/>
-				</LabelField>
-				<LabelField name="Автор" id="28">
-					<DataPath>Список.Автор</DataPath>
-					<UserVisible>
-						<xr:Common>true</xr:Common>
-						<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
-						<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
-						<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
-						<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
-						<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
-						<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
-						<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
-						<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
-						<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
-						<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
-						<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
-						<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
-						<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
-						<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
-						<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
-						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
-					</UserVisible>
-					<ContextMenu name="АвторКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="30"/>
-				</LabelField>
-				<CheckBoxField name="СсылкаПризнакИзменения" id="43">
-					<DataPath>Список.Ref.ПризнакИзменения</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="СсылкаПризнакИзмененияКонтекстноеМеню" id="44"/>
-					<ExtendedTooltip name="СсылкаПризнакИзмененияРасширеннаяПодсказка" id="45"/>
+					<ContextMenu name="ПроведенКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ПроведенРасширеннаяПодсказка" id="36"/>
 				</CheckBoxField>
+				<LabelField name="ДатаДокумента" id="22">
+					<DataPath>Список.ДатаДокумента</DataPath>
+					<ContextMenu name="ДатаДокументаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДатаДокументаРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="Номер" id="25">
+					<DataPath>Список.Номер</DataPath>
+					<ContextMenu name="НомерКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="НомерПартии" id="28">
+					<DataPath>Список.НомерПартии</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<ContextMenu name="НомерПартииКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="НомерПартииРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="ВидПродукции" id="19">
+					<DataPath>Список.ВидПродукции</DataPath>
+					<ContextMenu name="ВидПродукцииКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ВидПродукцииРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="ПланируемоеКоличество" id="31">
+					<DataPath>Список.ПланируемоеКоличество</DataPath>
+					<ContextMenu name="ПланируемоеКоличествоКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ПланируемоеКоличествоРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<LabelField name="Статус" id="40">
+					<DataPath>Список.Статус</DataPath>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+				<LabelField name="Статус1" id="46">
+					<DataPath>Список.Статус1</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус отправки УКЗ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Статус1КонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="Статус1РасширеннаяПодсказка" id="48"/>
+				</LabelField>
+				<CheckBoxField name="ПризнакИзменения" id="49">
+					<DataPath>Список.ПризнакИзменения</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПризнакИзмененияКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ПризнакИзмененияРасширеннаяПодсказка" id="51"/>
+				</CheckBoxField>
+				<LabelField name="Автор" id="16">
+					<DataPath>Список.Автор</DataPath>
+					<ContextMenu name="АвторКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="18"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -182,11 +145,27 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>Список.Ref</Field>
+				<Field>Список.Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументПроизводство.Проведен КАК Проведен,
+	ДокументПроизводство.Дата КАК ДатаДокумента,
+	ДокументПроизводство.Номер КАК Номер,
+	ДокументПроизводство.Ссылка КАК Ссылка,
+	ДокументПроизводство.НомерПартии КАК НомерПартии,
+	ДокументПроизводство.ВидПродукции КАК ВидПродукции,
+	ДокументПроизводство.ПланируемоеКоличество КАК ПланируемоеКоличество,
+	ДокументПроизводство.Статус КАК Статус,
+	ДокументПроизводство.Автор КАК Автор,
+	СтатусОтправкиУКЗСрезПоследних.Статус КАК Статус1,
+	ДокументПроизводство.ПризнакИзменения КАК ПризнакИзменения
+ИЗ
+	Документ.Производство КАК ДокументПроизводство
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СтатусОтправкиУКЗ.СрезПоследних КАК СтатусОтправкиУКЗСрезПоследних
+		ПО ДокументПроизводство.Ссылка = СтатусОтправкиУКЗСрезПоследних.ДокументУчетаУКЗ.Ссылка</QueryText>
 				<MainTable>Document.Производство</MainTable>
 				<ListSettings>
 					<dcsset:filter>

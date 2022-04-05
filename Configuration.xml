@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Производство 1.4</v8:content>
+					<v8:content>Производство 1.5</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ЗапускТонкогоКлиента</xr:Item>
 			</DefaultRoles>
 			<Vendor>Peltik</Vendor>
-			<Version>1.4.0.41</Version>
+			<Version>1.6.0.1</Version>
 			<UpdateCatalogAddress>http://downloads.v8.1c.ru/tmplts/ИНеБудетНикогда</UpdateCatalogAddress>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -208,13 +208,13 @@
 			<BriefInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Производство 1.4</v8:content>
+					<v8:content>Производство 1.5</v8:content>
 				</v8:item>
 			</BriefInformation>
 			<DetailedInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Производство 1.4</v8:content>
+					<v8:content>Производство 1.5</v8:content>
 				</v8:item>
 			</DetailedInformation>
 			<Copyright>
@@ -303,7 +303,7 @@
 			<Constant>ЛогинДатаМарк</Constant>
 			<Constant>НаименованиеОрганизации</Constant>
 			<Constant>НачальникПроизводства</Constant>
-			<Constant>ОтветсвенныйЗаКалькуляцию</Constant>
+			<Constant>ОтветственныйЗаКалькуляцию</Constant>
 			<Constant>ОтпускРазрешил</Constant>
 			<Constant>Пароль1С77</Constant>
 			<Constant>ПарольДатаМарк</Constant>
@@ -322,8 +322,10 @@
 			<Catalog>Автомобили</Catalog>
 			<Catalog>ВидКонтроля</Catalog>
 			<Catalog>ВидыГрафиковРаботы</Catalog>
+			<Catalog>ВидыУпаковок</Catalog>
 			<Catalog>Должность</Catalog>
 			<Catalog>ЕдиницыИзмерения</Catalog>
+			<Catalog>ИнформацияОбИдентификации</Catalog>
 			<Catalog>КатегорииМИДС</Catalog>
 			<Catalog>КлассВредности</Catalog>
 			<Catalog>Контрагенты</Catalog>
@@ -344,10 +346,21 @@
 			<Catalog>ТНПА</Catalog>
 			<Catalog>Трудозатраты</Catalog>
 			<Catalog>УсловияИспытаний</Catalog>
+			<Catalog>УсловияТранспортировки</Catalog>
 			<Catalog>ЦелиИсследований</Catalog>
 			<Document>ВводОстатков</Document>
 			<Document>ВнутреннееПеремещение</Document>
 			<Document>ВозвратТоваров</Document>
+			<Document>Журнал10</Document>
+			<Document>Журнал3</Document>
+			<Document>Журнал4</Document>
+			<Document>Журнал5</Document>
+			<Document>Журнал6</Document>
+			<Document>Журнал71</Document>
+			<Document>Журнал72</Document>
+			<Document>Журнал8</Document>
+			<Document>Журнал9</Document>
+			<Document>Журнал91</Document>
 			<Document>Заявка</Document>
 			<Document>Инвентаризация</Document>
 			<Document>Накладная</Document>
@@ -388,8 +401,8 @@
 			<Enum>Соответствие</Enum>
 			<Enum>СпособПодбора</Enum>
 			<Enum>СтатусЗаявки</Enum>
+			<Enum>СтатусИспытаний</Enum>
 			<Enum>СтатусОтгрузки</Enum>
-			<Enum>СтатусОтправкиОтчетаПоУКЗ</Enum>
 			<Enum>СтатусПроизводства</Enum>
 			<Enum>ТипЗадолженности</Enum>
 			<Enum>ТипОтчетаОстатки</Enum>
@@ -413,20 +426,20 @@
 			<Report>Форма12П1</Report>
 			<Report>Форма12П2</Report>
 			<Report>УчетУКЗ</Report>
-			<DataProcessor>ВыгрузкаВXML</DataProcessor>
 			<DataProcessor>ЗагрузкаНакладных</DataProcessor>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
-			<DataProcessor>ДатаМарк</DataProcessor>
+			<DataProcessor>ПерепроведениеРасходныхНакладных</DataProcessor>
 			<InformationRegister>ГрафикиРаботы</InformationRegister>
 			<InformationRegister>НормыРасхода</InformationRegister>
 			<InformationRegister>НормыРасходВспомогательныхСредств</InformationRegister>
 			<InformationRegister>НормыСписанияПродукции</InformationRegister>
+			<InformationRegister>ОстаткиКЗ</InformationRegister>
 			<InformationRegister>Прейскурант</InformationRegister>
+			<InformationRegister>СведенияОИсследованиях</InformationRegister>
 			<InformationRegister>Скидки</InformationRegister>
+			<InformationRegister>СтатусОтправкиУКЗ</InformationRegister>
 			<InformationRegister>СырьевыеЗапасы</InformationRegister>
 			<InformationRegister>ТарифныеРазряды</InformationRegister>
-			<InformationRegister>ОстаткиКЗ</InformationRegister>
-			<InformationRegister>СтатусОтправкиУКЗ</InformationRegister>
 			<AccumulationRegister>Заявка</AccumulationRegister>
 			<AccumulationRegister>Остатки</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ВидыСубконто</ChartOfCharacteristicTypes>

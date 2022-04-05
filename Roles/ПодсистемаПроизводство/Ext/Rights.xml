@@ -627,6 +627,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ЛогинДатаМарк</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.УНП</name>
 		<right>
 			<name>Read</name>
@@ -1303,6 +1314,28 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.УсловияТранспортировки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ИнформацияОбИдентификации</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ЦелиИсследований</name>
 		<right>
 			<name>Read</name>
@@ -1827,6 +1860,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ПарольДатаМарк</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.Производство.Command.ОбъемПроизводства</name>
 		<right>
 			<name>View</name>
@@ -1887,7 +1931,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ОтветсвенныйЗаКалькуляцию</name>
+		<name>Constant.ОтветственныйЗаКалькуляцию</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

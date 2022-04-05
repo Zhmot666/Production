@@ -179,7 +179,7 @@
 					<v8:content>Загрузить</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Команда1</Action>
+			<Action>ЗагрузитьНакладные</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">СписокНакладных</AssociatedTableElementId>
 		</Command>

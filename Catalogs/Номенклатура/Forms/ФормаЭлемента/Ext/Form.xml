@@ -61,7 +61,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>GTIN (трихкод)</v8:content>
+									<v8:content>GTIN (штрихкод)</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="GTINКонтекстноеМеню" id="134"/>
@@ -133,6 +133,11 @@
 							<ContextMenu name="ВесЕдиницыКонтекстноеМеню" id="118"/>
 							<ExtendedTooltip name="ВесЕдиницыРасширеннаяПодсказка" id="119"/>
 						</InputField>
+						<InputField name="МассаНетто" id="136">
+							<DataPath>Объект.МассаНетто</DataPath>
+							<ContextMenu name="МассаНеттоКонтекстноеМеню" id="137"/>
+							<ExtendedTooltip name="МассаНеттоРасширеннаяПодсказка" id="138"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Тара" id="122">
@@ -160,11 +165,36 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="СрокГодности" id="44">
-			<DataPath>Объект.СрокГодности</DataPath>
-			<ContextMenu name="СрокГодностиКонтекстноеМеню" id="45"/>
-			<ExtendedTooltip name="СрокГодностиРасширеннаяПодсказка" id="46"/>
-		</InputField>
+		<UsualGroup name="УпаковкаГодность" id="142">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упаковка годность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упаковка годность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="УпаковкаГодностьРасширеннаяПодсказка" id="143"/>
+			<ChildItems>
+				<InputField name="ВидУпаковки" id="139">
+					<DataPath>Объект.ВидУпаковки</DataPath>
+					<ContextMenu name="ВидУпаковкиКонтекстноеМеню" id="140"/>
+					<ExtendedTooltip name="ВидУпаковкиРасширеннаяПодсказка" id="141"/>
+				</InputField>
+				<InputField name="СрокГодности" id="44">
+					<DataPath>Объект.СрокГодности</DataPath>
+					<ContextMenu name="СрокГодностиКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СрокГодностиРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="ЛимитОстатка" id="47">
 			<ContextMenu name="ЛимитОстаткаКонтекстноеМеню" id="48"/>
 			<ExtendedTooltip name="ЛимитОстаткаРасширеннаяПодсказка" id="49"/>

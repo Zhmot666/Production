@@ -234,6 +234,7 @@
 							<ReadOnly>true</ReadOnly>
 							<AutoMaxHeight>false</AutoMaxHeight>
 							<MaxHeight>3</MaxHeight>
+							<VerticalScrollBar>DontUse</VerticalScrollBar>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>ИнформацияОНормахСписания</DataPath>
@@ -521,7 +522,6 @@
 								<ExtendedTooltip name="ВозвратныеОтходыУправлениеПоискомРасширеннаяПодсказка" id="85"/>
 							</SearchControlAddition>
 							<Events>
-								<Event name="BeforeAddRow">ВозвратныеОтходыПередНачаломДобавления</Event>
 								<Event name="BeforeEditEnd">ВозвратныеОтходыПередОкончаниемРедактирования</Event>
 								<Event name="AfterDeleteRow">ВозвратныеОтходыПослеУдаления</Event>
 							</Events>
@@ -601,11 +601,11 @@
 					</ToolTip>
 					<ExtendedTooltip name="ТаблицаКонтрольныхЗнаковРасширеннаяПодсказка" id="210"/>
 					<ChildItems>
-						<CheckBoxField name="КонтрольИспозьзованияКЗ" id="242">
+						<CheckBoxField name="КонтрольИспользованияКЗ" id="242">
 							<DataPath>Объект.СписыватьКЗ</DataPath>
 							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="КонтрольИспозьзованияКЗКонтекстноеМеню" id="243"/>
-							<ExtendedTooltip name="КонтрольИспозьзованияКЗРасширеннаяПодсказка" id="244"/>
+							<ContextMenu name="КонтрольИспользованияКЗКонтекстноеМеню" id="243"/>
+							<ExtendedTooltip name="КонтрольИспользованияКЗРасширеннаяПодсказка" id="244"/>
 						</CheckBoxField>
 						<Table name="КонтрольныеЗнаки" id="211">
 							<Footer>true</Footer>
@@ -619,6 +619,25 @@
 								<ChildItems>
 									<Button name="СырьеИМатериалыОтправитьОтчетПоУКЗ" id="245">
 										<Type>CommandBarButton</Type>
+										<UserVisible>
+											<xr:Common>true</xr:Common>
+											<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+											<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+											<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+											<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+											<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+											<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+											<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаПроизводство">true</xr:Value>
+											<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+											<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+										</UserVisible>
 										<CommandName>Form.Command.ОтправитьОтчетПоУКЗ</CommandName>
 										<TextColor>style:FieldSelectedTextColor</TextColor>
 										<BackColor>style:SpecialTextColor</BackColor>
@@ -626,8 +645,33 @@
 									</Button>
 									<Button name="КонтрольныеЗнакиПроверитьСтатусОтправкиУКЗ" id="253">
 										<Type>CommandBarButton</Type>
+										<UserVisible>
+											<xr:Common>true</xr:Common>
+											<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+											<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+											<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+											<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+											<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+											<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+											<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаПроизводство">true</xr:Value>
+											<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+											<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+											<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+										</UserVisible>
 										<CommandName>Form.Command.ПроверитьСтатусОтправкиУКЗ</CommandName>
 										<BackColor>style:ImportantColor</BackColor>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Проверить статус</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="КонтрольныеЗнакиПроверитьСтатусОтправкиУКЗРасширеннаяПодсказка" id="254"/>
 									</Button>
 								</ChildItems>
@@ -685,14 +729,14 @@
 									<ContextMenu name="КонтрольныеЗнакиКонечныйНомерКонтекстноеМеню" id="234"/>
 									<ExtendedTooltip name="КонтрольныеЗнакиКонечныйНомерРасширеннаяПодсказка" id="235"/>
 								</InputField>
-								<InputField name="КонтрольныеЗнакиКоличесиво" id="236">
+								<InputField name="КонтрольныеЗнакиКоличество" id="236">
 									<DataPath>Объект.КонтрольныеЗнаки.Количество</DataPath>
 									<Enabled>false</Enabled>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<FooterDataPath>Объект.КонтрольныеЗнаки.TotalКоличество</FooterDataPath>
-									<ContextMenu name="КонтрольныеЗнакиКоличесивоКонтекстноеМеню" id="237"/>
-									<ExtendedTooltip name="КонтрольныеЗнакиКоличесивоРасширеннаяПодсказка" id="238"/>
+									<ContextMenu name="КонтрольныеЗнакиКоличествоКонтекстноеМеню" id="237"/>
+									<ExtendedTooltip name="КонтрольныеЗнакиКоличествоРасширеннаяПодсказка" id="238"/>
 								</InputField>
 								<InputField name="КонтрольныеЗнакиПричинаСписания" id="239">
 									<DataPath>Объект.КонтрольныеЗнаки.ПричинаСписания</DataPath>
@@ -777,11 +821,119 @@
 								</InputField>
 							</ChildItems>
 						</Table>
-						<LabelField name="СтатусОтправкиОтчетаПоУКЗ" id="250">
-							<DataPath>Объект.СтатусОтправкиОтчетаПоУКЗ</DataPath>
-							<ContextMenu name="СтатусОтправкиОтчетаПоУКЗКонтекстноеМеню" id="251"/>
-							<ExtendedTooltip name="СтатусОтправкиОтчетаПоУКЗРасширеннаяПодсказка" id="252"/>
-						</LabelField>
+						<UsualGroup name="ГруппаСтатуса" id="279">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа статуса</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа статуса</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСтатусаРасширеннаяПодсказка" id="280"/>
+							<ChildItems>
+								<Table name="СтатусОтправкиОтчетаПоУКЗ1" id="263">
+									<Representation>List</Representation>
+									<TitleLocation>Left</TitleLocation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<Enabled>false</Enabled>
+									<ReadOnly>true</ReadOnly>
+									<SkipOnInput>true</SkipOnInput>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Height>1</Height>
+									<Header>false</Header>
+									<VerticalScrollBar>DontUse</VerticalScrollBar>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<DataPath>СтатусОтправкиОтчетаПоУКЗ</DataPath>
+									<RowPictureDataPath>СтатусОтправкиОтчетаПоУКЗ.DefaultPicture</RowPictureDataPath>
+									<OnMainServerUnavalableBehavior>MakeDisable</OnMainServerUnavalableBehavior>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="СтатусОтправкиОтчетаПоУКЗ1КонтекстноеМеню" id="264"/>
+									<AutoCommandBar name="СтатусОтправкиОтчетаПоУКЗ1КоманднаяПанель" id="265"/>
+									<ExtendedTooltip name="СтатусОтправкиОтчетаПоУКЗ1РасширеннаяПодсказка" id="266"/>
+									<SearchStringAddition name="СтатусОтправкиОтчетаПоУКЗ1СтрокаПоиска" id="267">
+										<AdditionSource>
+											<Item>СтатусОтправкиОтчетаПоУКЗ1</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СтатусОтправкиОтчетаПоУКЗ1СтрокаПоискаКонтекстноеМеню" id="268"/>
+										<ExtendedTooltip name="СтатусОтправкиОтчетаПоУКЗ1СтрокаПоискаРасширеннаяПодсказка" id="269"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СтатусОтправкиОтчетаПоУКЗ1СостояниеПросмотра" id="270">
+										<AdditionSource>
+											<Item>СтатусОтправкиОтчетаПоУКЗ1</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СтатусОтправкиОтчетаПоУКЗ1СостояниеПросмотраКонтекстноеМеню" id="271"/>
+										<ExtendedTooltip name="СтатусОтправкиОтчетаПоУКЗ1СостояниеПросмотраРасширеннаяПодсказка" id="272"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СтатусОтправкиОтчетаПоУКЗ1УправлениеПоиском" id="273">
+										<AdditionSource>
+											<Item>СтатусОтправкиОтчетаПоУКЗ1</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СтатусОтправкиОтчетаПоУКЗ1УправлениеПоискомКонтекстноеМеню" id="274"/>
+										<ExtendedTooltip name="СтатусОтправкиОтчетаПоУКЗ1УправлениеПоискомРасширеннаяПодсказка" id="275"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="СтатусОтправкиОтчетаПоУКЗ1Период" id="281">
+											<DataPath>СтатусОтправкиОтчетаПоУКЗ.Период</DataPath>
+											<ContextMenu name="СтатусОтправкиОтчетаПоУКЗ1ПериодКонтекстноеМеню" id="282"/>
+											<ExtendedTooltip name="СтатусОтправкиОтчетаПоУКЗ1ПериодРасширеннаяПодсказка" id="283"/>
+										</LabelField>
+										<LabelField name="СтатусОтправкиОтчетаПоУКЗ1Статус" id="276">
+											<DataPath>СтатусОтправкиОтчетаПоУКЗ.Статус</DataPath>
+											<ContextMenu name="СтатусОтправкиОтчетаПоУКЗ1СтатусКонтекстноеМеню" id="277"/>
+											<ExtendedTooltip name="СтатусОтправкиОтчетаПоУКЗ1СтатусРасширеннаяПодсказка" id="278"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+								<Button name="ПросмотрИсторииОтчетов" id="255">
+									<Type>UsualButton</Type>
+									<UserVisible>
+										<xr:Common>true</xr:Common>
+										<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+										<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+										<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+										<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+										<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+										<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+										<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+										<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+										<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+										<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+										<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+										<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+										<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+										<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+										<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+										<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+									</UserVisible>
+									<CommandName>Form.Command.ПросмотрИсторииОтчетов</CommandName>
+									<ExtendedTooltip name="ПросмотрИсторииОтчетовРасширеннаяПодсказка" id="256"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ТаблицаЭтаповПроизводства" id="126">
@@ -913,6 +1065,47 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<Attribute name="СтатусОтправкиОтчетаПоУКЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус отправки отчета по УКЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийСтатусОтправкиУКЗСрезПоследних.Статус КАК Статус,
+	РегистрСведенийСтатусОтправкиУКЗСрезПоследних.Период КАК Период
+ИЗ
+	РегистрСведений.СтатусОтправкиУКЗ.СрезПоследних КАК РегистрСведенийСтатусОтправкиУКЗСрезПоследних
+ГДЕ
+	РегистрСведенийСтатусОтправкиУКЗСрезПоследних.ДокументУчетаУКЗ = &amp;ДокументУчетаУКЗ</QueryText>
+				<MainTable>InformationRegister.СтатусОтправкиУКЗ.SliceLast</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОтправитьОтчетПоУКЗ" id="1">
@@ -945,6 +1138,21 @@
 			</ToolTip>
 			<Action>ПроверитьСтатусОтправкиУКЗ</Action>
 		</Command>
+		<Command name="ПросмотрИсторииОтчетов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр истории</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр истории отчетов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПросмотрИсторииОтчетов</Action>
+		</Command>
 	</Commands>
 	<Parameters>
 		<Parameter name="ВидПродукции">
@@ -970,7 +1178,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>1:681ca864-5ec0-40e9-ba3a-da3851acecd0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1031,6 +1239,30 @@
 					<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
 					<xr:Value name="Role.ПодсистемаАдминистраторСистемы">false</xr:Value>
 					<xr:Value name="Role.ПодсистемаБухгалтерия">true</xr:Value>
+					<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+					<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.СведенияОИсследованиях.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>true</xr:Common>
+					<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+					<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+					<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+					<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+					<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+					<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаАдминистраторСистемы">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
 					<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
 					<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
 					<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>

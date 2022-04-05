@@ -339,7 +339,7 @@
 			</c>
 			<c>
 				<c>
-					<f>23</f>
+					<f>24</f>
 					<parameter>ИтогоПоВиду</parameter>
 				</c>
 			</c>
@@ -364,7 +364,7 @@
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>25</f>
 					<parameter>Автор</parameter>
 				</c>
 			</c>
@@ -376,7 +376,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>25</defaultFormatIndex>
+	<defaultFormatIndex>26</defaultFormatIndex>
 	<height>16</height>
 	<vgRows>16</vgRows>
 	<merge>
@@ -553,6 +553,20 @@
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
 		<markNegatives>false</markNegatives>
+	</format>
+	<format>
+		<border>0</border>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Block</textPlacement>
+		<fillType>Parameter</fillType>
+		<markNegatives>false</markNegatives>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧЦ=11; ЧДЦ=2</v8:content>
+			</v8:item>
+		</format>
 	</format>
 	<format>
 		<border>0</border>

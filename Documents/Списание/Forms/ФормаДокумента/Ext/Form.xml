@@ -3,20 +3,7 @@
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Popup name="КнопкиПечати" id="77">
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Печать</v8:content>
-					</v8:item>
-				</Title>
-				<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
-				<ExtendedTooltip name="КнопкиПечатиРасширеннаяПодсказка" id="78"/>
-			</Popup>
-		</ChildItems>
-	</AutoCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -134,6 +121,7 @@
 					<v8:content>Информация о ТНПА</v8:content>
 				</v8:item>
 			</Title>
+			<Group>AlwaysHorizontal</Group>
 			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ИнформацияОТНПАРасширеннаяПодсказка" id="67"/>
@@ -152,11 +140,61 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="МаслоТехническое" id="79">
-			<DataPath>Объект.МаслоТехническое</DataPath>
-			<ContextMenu name="МаслоТехническоеКонтекстноеМеню" id="80"/>
-			<ExtendedTooltip name="МаслоТехническоеРасширеннаяПодсказка" id="81"/>
-		</InputField>
+		<UsualGroup name="ТранспортИИдентификация" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транспорт и идентификация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транспорт и идентификация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ТранспортИИдентификацияРасширеннаяПодсказка" id="100"/>
+			<ChildItems>
+				<InputField name="УсловияТранспортировки" id="96">
+					<DataPath>Объект.УсловияТранспортировки</DataPath>
+					<ContextMenu name="УсловияТранспортировкиКонтекстноеМеню" id="97"/>
+					<ExtendedTooltip name="УсловияТранспортировкиРасширеннаяПодсказка" id="98"/>
+				</InputField>
+				<InputField name="ИнформацияОбИдентификации" id="101">
+					<DataPath>Объект.ИнформацияОбИдентификации</DataPath>
+					<ContextMenu name="ИнформацияОбИдентификацииКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ИнформацияОбИдентификацииРасширеннаяПодсказка" id="103"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СлужебныеДанные" id="94">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Служебные данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СлужебныеДанныеРасширеннаяПодсказка" id="95"/>
+			<ChildItems>
+				<InputField name="МаслоТехническое" id="79">
+					<DataPath>Объект.МаслоТехническое</DataPath>
+					<ContextMenu name="МаслоТехническоеКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="МаслоТехническоеРасширеннаяПодсказка" id="81"/>
+				</InputField>
+				<InputField name="ТекстДляСлужебной" id="91">
+					<DataPath>Объект.ТекстДляСлужебной</DataPath>
+					<MultiLine>false</MultiLine>
+					<ContextMenu name="ТекстДляСлужебнойКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="ТекстДляСлужебнойРасширеннаяПодсказка" id="93"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<Table name="Пробы" id="22">
 			<Representation>List</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>

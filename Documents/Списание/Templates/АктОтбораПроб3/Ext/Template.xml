@@ -175,7 +175,19 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Заявитель  [ОбъектПроизводства], [ОбъектПроизводства.Адрес]</v8:content>
+							<v8:content>Заявитель</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>2</i>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>  [ОбъектПроизводства], [ОбъектПроизводства.Адрес]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -185,17 +197,6 @@
 	<rowsItem>
 		<index>7</index>
 		<row>
-			<c>
-				<c>
-					<f>14</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>(Наименование объекта и его адрес)</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
 			<c>
 				<c>
 					<f>15</f>
@@ -208,32 +209,13 @@
 			</c>
 			<c>
 				<c>
-					<f>4</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>5</f>
-				</c>
-			</c>
-			<c>
-				<c>
 					<f>17</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>18</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>19</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>20</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>(Наименование объекта и его адрес)</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -247,7 +229,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Время отбора проб____________________________________________________</v8:content>
+							<v8:content>Время отбора проб __________________________________________________________________________</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -299,11 +281,11 @@
 		<row>
 			<c>
 				<c>
-					<f>21</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Время доставки_______________________________________________________</v8:content>
+							<v8:content>Время доставки _____________________________________________________________________________</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -355,11 +337,11 @@
 		<row>
 			<c>
 				<c>
-					<f>12</f>
+					<f>19</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Условия транспортировки (температура, дата, тара и др.), хранения ______________ Сумка-холодильник, t +6°С </v8:content>
+							<v8:content>Условия транспортировки (температура, дата, тара и др.), хранения : [УсловияТранспортировки]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -371,53 +353,8 @@
 		<row>
 			<c>
 				<c>
-					<f>12</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>__________________________________________________________________________________________________________________</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>12</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>12</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>12</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>12</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>12</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>12</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>12</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>12</f>
+					<f>20</f>
+					<tl/>
 				</c>
 			</c>
 		</row>
@@ -477,11 +414,27 @@
 		<row>
 			<c>
 				<c>
-					<f>13</f>
+					<f>21</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Причина отбора проб: [ПричиныОтбораПроб], производственный контроль__________________________________________</v8:content>
+							<v8:content>Причина отбора проб:</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>19</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>22</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[ПричиныОтбораПроб]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -547,7 +500,19 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Информация об идентификации продукции____________идентичны по наименованию партии, дате изготовителя, по производителю ____</v8:content>
+							<v8:content>Инф. об идентификации прод-ии:</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>2</i>
+				<c>
+					<f>22</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[ИнформацияОбИдентификации]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -559,7 +524,17 @@
 		<row>
 			<c>
 				<c>
-					<f>22</f>
+					<f>23</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>23</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -625,7 +600,7 @@
 		<row>
 			<c>
 				<c>
-					<f>23</f>
+					<f>24</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -636,7 +611,7 @@
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -647,7 +622,7 @@
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -669,7 +644,7 @@
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -680,7 +655,7 @@
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -702,7 +677,7 @@
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -713,7 +688,7 @@
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -736,7 +711,12 @@
 			<c>
 				<c>
 					<f>29</f>
-					<parameter>НаименованиеПроб</parameter>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[НаименованиеПроб]. Партия № [НомерПартии]</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
@@ -765,8 +745,13 @@
 			</c>
 			<c>
 				<c>
-					<f>30</f>
-					<parameter>ВесПробы</parameter>
+					<f>32</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[ВесПробы] x [НаименованиеПробМассаНетто]</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
@@ -788,12 +773,12 @@
 		<row>
 			<c>
 				<c>
-					<f>21</f>
+					<f>18</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>18</f>
 				</c>
 			</c>
 			<c>
@@ -838,7 +823,7 @@
 		<row>
 			<c>
 				<c>
-					<f>32</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -849,42 +834,42 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>18</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 		</row>
@@ -892,9 +877,60 @@
 	<rowsItem>
 		<index>22</index>
 		<row>
+			<formatIndex>35</formatIndex>
 			<c>
 				<c>
-					<f>32</f>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>23</index>
+		<row>
+			<c>
+				<c>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -905,52 +941,103 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>18</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>23</index>
+		<index>24</index>
+		<row>
+			<formatIndex>35</formatIndex>
+			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>25</index>
 		<row>
 			<c>
 				<c>
-					<f>21</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -961,50 +1048,50 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>18</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>33</f>
+					<f>34</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>34</defaultFormatIndex>
-	<height>24</height>
-	<vgRows>24</vgRows>
+	<defaultFormatIndex>36</defaultFormatIndex>
+	<height>26</height>
+	<vgRows>26</vgRows>
 	<merge>
 		<r>2</r>
 		<c>0</c>
@@ -1023,12 +1110,17 @@
 	<merge>
 		<r>6</r>
 		<c>0</c>
-		<w>8</w>
+		<w>1</w>
+	</merge>
+	<merge>
+		<r>6</r>
+		<c>2</c>
+		<w>6</w>
 	</merge>
 	<merge>
 		<r>7</r>
-		<c>0</c>
-		<w>8</w>
+		<c>2</c>
+		<w>6</w>
 	</merge>
 	<merge>
 		<r>10</r>
@@ -1036,19 +1128,29 @@
 		<w>8</w>
 	</merge>
 	<merge>
-		<r>13</r>
+		<r>11</r>
 		<c>0</c>
 		<w>8</w>
+	</merge>
+	<merge>
+		<r>13</r>
+		<c>2</c>
+		<w>6</w>
 	</merge>
 	<merge>
 		<r>15</r>
 		<c>0</c>
-		<w>8</w>
+		<w>1</w>
+	</merge>
+	<merge>
+		<r>15</r>
+		<c>2</c>
+		<w>6</w>
 	</merge>
 	<merge>
 		<r>16</r>
-		<c>0</c>
-		<w>8</w>
+		<c>2</c>
+		<w>6</w>
 	</merge>
 	<merge>
 		<r>18</r>
@@ -1069,7 +1171,7 @@
 		<area>
 			<type>Rows</type>
 			<beginRow>21</beginRow>
-			<endRow>23</endRow>
+			<endRow>25</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -1139,7 +1241,7 @@
 		<width>299</width>
 	</format>
 	<format>
-		<width>177</width>
+		<width>159</width>
 	</format>
 	<format>
 		<width>117</width>
@@ -1173,6 +1275,13 @@
 	</format>
 	<format>
 		<font>0</font>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Text</fillType>
+	</format>
+	<format>
+		<font>0</font>
+		<bottomBorder>0</bottomBorder>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
 	</format>
 	<format>
@@ -1182,26 +1291,37 @@
 		<verticalAlignment>Top</verticalAlignment>
 	</format>
 	<format>
+		<font>1</font>
 		<width>195</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
 	</format>
 	<format>
+		<font>1</font>
 		<width>147</width>
-	</format>
-	<format>
-		<width>81</width>
-	</format>
-	<format>
-		<width>82</width>
-	</format>
-	<format>
-		<width>102</width>
-	</format>
-	<format>
-		<width>99</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
 	</format>
 	<format>
 		<font>0</font>
 		<width>17</width>
+	</format>
+	<format>
+		<font>0</font>
+		<fillType>Template</fillType>
+	</format>
+	<format>
+		<font>0</font>
+		<bottomBorder>0</bottomBorder>
+	</format>
+	<format>
+		<font>0</font>
+		<fillType>Text</fillType>
+	</format>
+	<format>
+		<font>0</font>
+		<bottomBorder>0</bottomBorder>
+		<fillType>Template</fillType>
 	</format>
 	<format>
 		<font>1</font>
@@ -1212,36 +1332,34 @@
 		<font>2</font>
 		<border>0</border>
 		<width>17</width>
-		<horizontalAlignment>Justify</horizontalAlignment>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
 		<columnSizeChange>Normal</columnSizeChange>
 	</format>
 	<format>
 		<font>2</font>
 		<border>0</border>
 		<width>17</width>
-		<horizontalAlignment>Justify</horizontalAlignment>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
 		<textOrientation>0</textOrientation>
 		<bySelectedColumns>false</bySelectedColumns>
 	</format>
 	<format>
 		<font>2</font>
 		<border>0</border>
-		<horizontalAlignment>Justify</horizontalAlignment>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
 		<font>2</font>
 		<border>0</border>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
-	</format>
-	<format>
-		<font>2</font>
-		<border>0</border>
-		<horizontalAlignment>Justify</horizontalAlignment>
-		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
 		<detailsUse>Cell</detailsUse>
 	</format>
 	<format>
@@ -1256,22 +1374,25 @@
 		<font>2</font>
 		<border>0</border>
 		<width>17</width>
-		<horizontalAlignment>Justify</horizontalAlignment>
+		<horizontalAlignment>Left</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
+	</format>
+	<format>
+		<font>2</font>
+		<border>0</border>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
 		<font>2</font>
 		<border>0</border>
-		<horizontalAlignment>Justify</horizontalAlignment>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
-		<fillType>Parameter</fillType>
-	</format>
-	<format>
-		<font>2</font>
-		<border>0</border>
-		<horizontalAlignment>Justify</horizontalAlignment>
-		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
 		<format>
 			<v8:item>
@@ -1281,6 +1402,14 @@
 		</format>
 	</format>
 	<format>
+		<font>2</font>
+		<border>0</border>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
+	</format>
+	<format>
 		<font>0</font>
 		<width>17</width>
 		<fillType>Template</fillType>
@@ -1288,6 +1417,9 @@
 	<format>
 		<font>0</font>
 		<width>72</width>
+	</format>
+	<format>
+		<height>39</height>
 	</format>
 	<format>
 		<width>72</width>
