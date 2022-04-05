@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяИнформация" id="127">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая информация</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяИнформацияРасширеннаяПодсказка" id="128"/>
+			<ChildItems>
+				<UsualGroup name="ТекстоваяИнформация" id="129">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текстовая информация</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ТекстоваяИнформацияРасширеннаяПодсказка" id="130"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Артикул" id="109">
+							<DataPath>Объект.Артикул</DataPath>
+							<ContextMenu name="АртикулКонтекстноеМеню" id="110"/>
+							<ExtendedTooltip name="АртикулРасширеннаяПодсказка" id="111"/>
+						</InputField>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ВидНоменклатуры" id="10">
+							<DataPath>Объект.ВидНоменклатуры</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВидНоменклатурыКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ВидНоменклатурыРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="GTIN" id="133">
+							<DataPath>Объект.GTIN</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GTIN (трихкод)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="GTINКонтекстноеМеню" id="134"/>
+							<ExtendedTooltip name="GTINРасширеннаяПодсказка" id="135"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГрафическаяИнформация" id="131">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Графическая информация</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГрафическаяИнформацияРасширеннаяПодсказка" id="132"/>
+					<ChildItems>
+						<PictureField name="СсылкаНаКартинку" id="124">
+							<DataPath>СсылкаНаКартинку</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Изображение</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Stretch</PictureSize>
+							<Zoomable>true</Zoomable>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="СсылкаНаКартинкуКонтекстноеМеню" id="125"/>
+							<ExtendedTooltip name="СсылкаНаКартинкуРасширеннаяПодсказка" id="126"/>
+							<Events>
+								<Event name="Click">СсылкаНаКартинкуНажатие</Event>
+							</Events>
+						</PictureField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ЕдиницыИзмеренияИТара" id="112">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единицы измерения и тара</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ЕдиницыИзмеренияИТараРасширеннаяПодсказка" id="113"/>
+			<ChildItems>
+				<UsualGroup name="ЕдиницыИзмеренияИВес" id="120">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единицы измерения и вес</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЕдиницыИзмеренияИВесРасширеннаяПодсказка" id="121"/>
+					<ChildItems>
+						<InputField name="ЕдиницыИзмерения" id="13">
+							<DataPath>Объект.ЕдиницыИзмерения</DataPath>
+							<ContextMenu name="ЕдиницыИзмеренияКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ЕдиницыИзмеренияРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="ВесЕдиницы" id="117">
+							<DataPath>Объект.ВесЕдиницы</DataPath>
+							<ContextMenu name="ВесЕдиницыКонтекстноеМеню" id="118"/>
+							<ExtendedTooltip name="ВесЕдиницыРасширеннаяПодсказка" id="119"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Тара" id="122">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тара</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ТараРасширеннаяПодсказка" id="123"/>
+					<ChildItems>
+						<InputField name="ВидТары" id="114">
+							<DataPath>Объект.ВидТары</DataPath>
+							<ContextMenu name="ВидТарыКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="ВидТарыРасширеннаяПодсказка" id="116"/>
+						</InputField>
+						<InputField name="КоличествоВОдномГрузовомМесте" id="41">
+							<DataPath>Объект.КоличествоВОдномГрузовомМесте</DataPath>
+							<ContextMenu name="КоличествоВОдномГрузовомМестеКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="КоличествоВОдномГрузовомМестеРасширеннаяПодсказка" id="43"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="СрокГодности" id="44">
+			<DataPath>Объект.СрокГодности</DataPath>
+			<ContextMenu name="СрокГодностиКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="СрокГодностиРасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<InputField name="ЛимитОстатка" id="47">
+			<ContextMenu name="ЛимитОстаткаКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="ЛимитОстаткаРасширеннаяПодсказка" id="49"/>
+		</InputField>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Pages name="ДополнительнаяИнформация" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительная информация</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ДополнительнаяИнформацияРасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<Page name="ЛимитОстатков" id="52">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лимит остатков</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЛимитОстатковРасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<Table name="ЛимитыОстатков" id="54">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ЛимитыОстатков</DataPath>
+							<RowPictureDataPath>ЛимитыОстатков.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ЛимитыОстатковКонтекстноеМеню" id="55"/>
+							<AutoCommandBar name="ЛимитыОстатковКоманднаяПанель" id="56"/>
+							<ExtendedTooltip name="ЛимитыОстатковРасширеннаяПодсказка" id="57"/>
+							<SearchStringAddition name="ЛимитыОстатковСтрокаПоиска" id="58">
+								<AdditionSource>
+									<Item>ЛимитыОстатков</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛимитыОстатковСтрокаПоискаКонтекстноеМеню" id="59"/>
+								<ExtendedTooltip name="ЛимитыОстатковСтрокаПоискаРасширеннаяПодсказка" id="60"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЛимитыОстатковСостояниеПросмотра" id="61">
+								<AdditionSource>
+									<Item>ЛимитыОстатков</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛимитыОстатковСостояниеПросмотраКонтекстноеМеню" id="62"/>
+								<ExtendedTooltip name="ЛимитыОстатковСостояниеПросмотраРасширеннаяПодсказка" id="63"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЛимитыОстатковУправлениеПоиском" id="64">
+								<AdditionSource>
+									<Item>ЛимитыОстатков</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛимитыОстатковУправлениеПоискомКонтекстноеМеню" id="65"/>
+								<ExtendedTooltip name="ЛимитыОстатковУправлениеПоискомРасширеннаяПодсказка" id="66"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЛимитыОстатковСклад" id="67">
+									<DataPath>ЛимитыОстатков.Склад</DataPath>
+									<ContextMenu name="ЛимитыОстатковСкладКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="ЛимитыОстатковСкладРасширеннаяПодсказка" id="69"/>
+								</LabelField>
+								<LabelField name="ЛимитыОстатковНоменклатура" id="70">
+									<DataPath>ЛимитыОстатков.Номенклатура</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="ЛимитыОстатковНоменклатураКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="ЛимитыОстатковНоменклатураРасширеннаяПодсказка" id="72"/>
+								</LabelField>
+								<LabelField name="ЛимитыОстатковКоличество" id="73">
+									<DataPath>ЛимитыОстатков.Количество</DataPath>
+									<ContextMenu name="ЛимитыОстатковКоличествоКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ЛимитыОстатковКоличествоРасширеннаяПодсказка" id="75"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="НормыРасходаДляПродукции" id="76">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нормы расхода</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НормыРасходаДляПродукцииРасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<Table name="НормыРасхода" id="78">
+							<Enabled>false</Enabled>
+							<ReadOnly>true</ReadOnly>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>НормыРасхода</DataPath>
+							<RowPictureDataPath>НормыРасхода.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="НормыРасходаКонтекстноеМеню" id="79"/>
+							<AutoCommandBar name="НормыРасходаКоманднаяПанель" id="80"/>
+							<ExtendedTooltip name="НормыРасходаРасширеннаяПодсказка" id="81"/>
+							<SearchStringAddition name="НормыРасходаСтрокаПоиска" id="82">
+								<AdditionSource>
+									<Item>НормыРасхода</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НормыРасходаСтрокаПоискаКонтекстноеМеню" id="83"/>
+								<ExtendedTooltip name="НормыРасходаСтрокаПоискаРасширеннаяПодсказка" id="84"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НормыРасходаСостояниеПросмотра" id="85">
+								<AdditionSource>
+									<Item>НормыРасхода</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НормыРасходаСостояниеПросмотраКонтекстноеМеню" id="86"/>
+								<ExtendedTooltip name="НормыРасходаСостояниеПросмотраРасширеннаяПодсказка" id="87"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НормыРасходаУправлениеПоиском" id="88">
+								<AdditionSource>
+									<Item>НормыРасхода</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НормыРасходаУправлениеПоискомКонтекстноеМеню" id="89"/>
+								<ExtendedTooltip name="НормыРасходаУправлениеПоискомРасширеннаяПодсказка" id="90"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НормыРасходаПродукция" id="100">
+									<DataPath>НормыРасхода.Продукция</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="НормыРасходаПродукцияКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="НормыРасходаПродукцияРасширеннаяПодсказка" id="102"/>
+								</LabelField>
+								<LabelField name="НормыРасходаМатериал" id="103">
+									<DataPath>НормыРасхода.Материал</DataPath>
+									<ContextMenu name="НормыРасходаМатериалКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="НормыРасходаМатериалРасширеннаяПодсказка" id="105"/>
+								</LabelField>
+								<LabelField name="НормыРасходаКоличество" id="106">
+									<DataPath>НормыРасхода.Количество</DataPath>
+									<ContextMenu name="НормыРасходаКоличествоКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="НормыРасходаКоличествоРасширеннаяПодсказка" id="108"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЛимитыОстатков" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лимиты остатков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.СырьевыеЗапасы</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="НормыРасхода" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нормы расхода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<MainTable>InformationRegister.НормыРасхода.SliceLast</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Количество</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СсылкаНаКартинку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на картинку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

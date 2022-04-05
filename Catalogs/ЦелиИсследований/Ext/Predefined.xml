@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.13">
+	<Item id="9adc19e2-f8bc-4d4c-9fb8-708ff60861ba">
+		<Name>Арбитраж</Name>
+		<Code>000000001</Code>
+		<Description>Арбитраж</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

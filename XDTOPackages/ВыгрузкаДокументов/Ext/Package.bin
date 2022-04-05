@@ -1,0 +1,48 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.sample-package.org">
+	<objectType name="ДокументНакладная"/>
+	<objectType name="ДокументПеремещения">
+		<property name="НомерДокумента" type="xs:string" form="Element"/>
+		<property name="ДатаДокумента" type="xs:date"/>
+		<property name="НоменклатураНаименование" type="xs:string"/>
+		<property name="НоменклатураВидНоменклатуры" type="xs:string"/>
+		<property name="Количество" type="xs:decimal"/>
+		<property name="СкладОтправительКодВ77" type="xs:string"/>
+		<property name="СкладПолучательКодВ77" type="xs:string"/>
+	</objectType>
+	<objectType name="ДокументПроизводства">
+		<property name="НомерДокумента" type="xs:int" form="Attribute"/>
+		<property name="ДатаДокумента" type="xs:date"/>
+		<property name="ВидПродукцииНаименование" type="xs:string"/>
+		<property name="СкладСписанияСырьяКодВ77" type="xs:string"/>
+		<property name="КоличествоВыпуска" type="xs:decimal"/>
+		<property name="ВидПродукцииВидНоменклатуры" type="xs:string"/>
+		<property name="ПризнакИзменения" type="xs:boolean"/>
+		<property name="Ответсвенный" type="xs:string"/>
+	</objectType>
+	<objectType name="ДокументСписания">
+		<property name="НомерДокумента" type="xs:string"/>
+		<property name="ДатаДокумента" type="xs:date"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НомерПартии" type="xs:string"/>
+		<property name="Количество" type="xs:decimal"/>
+		<property name="ЦельИсследования" type="xs:string"/>
+		<property name="Склад" type="xs:string"/>
+	</objectType>
+	<objectType name="ДокументТрудозатрат">
+		<property name="ВидТрудозатрат" type="xs:string"/>
+		<property name="Время" type="xs:decimal"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.sample-package.org" name="СписокНакладных" base="d2p1:ДокументНакладная"/>
+	<objectType name="СписокПеремещения">
+		<property xmlns:d3p1="http://www.sample-package.org" name="ДокументПеремещения" type="d3p1:ДокументПеремещения" upperBound="99999999999999"/>
+	</objectType>
+	<objectType name="СписокПроизводство">
+		<property xmlns:d3p1="http://www.sample-package.org" name="ДокументПроизводства" type="d3p1:ДокументПроизводства" upperBound="99999999999999" nillable="false" fixed="false"/>
+	</objectType>
+	<objectType name="СписокСписания">
+		<property xmlns:d3p1="http://www.sample-package.org" name="ДокументСписания" type="d3p1:ДокументСписания" upperBound="9999999999"/>
+	</objectType>
+	<objectType name="СписокТрудозатраты">
+		<property xmlns:d3p1="http://www.sample-package.org" name="ДокументТрудозатрат" type="d3p1:ДокументТрудозатрат" lowerBound="1" upperBound="999999" nillable="false" fixed="false"/>
+	</objectType>
+</package>

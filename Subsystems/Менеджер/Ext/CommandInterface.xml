@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<CommandsVisibility>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПрейскурантЦен.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Склад.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СырьевыеЗапасы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:1a2a914d-4f8e-4357-974c-e25f6bb9b93c">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПротоколИспытаний.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.Скидки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="AccumulationRegister.Заявка.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Заявка.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.Остатки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Отгрузка.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПереводСырьяВПродукцию.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ВозвратТоваров.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПрейскурантЦен.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.Прейскурант.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Склад.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.СырьевыеЗапасы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:1a2a914d-4f8e-4357-974c-e25f6bb9b93c">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПротоколИспытаний.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.Скидки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.ЦеныИСкидки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Скидки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УдостоверениеКачества.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

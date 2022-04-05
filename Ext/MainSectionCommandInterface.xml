@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<CommandsVisibility>
+		<Command name="0:a516ae1b-ea4a-4c6b-88ea-d4df93e1a358">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="0:a516ae1b-ea4a-4c6b-88ea-d4df93e1a358">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+	</CommandsPlacement>
+</CommandInterface>

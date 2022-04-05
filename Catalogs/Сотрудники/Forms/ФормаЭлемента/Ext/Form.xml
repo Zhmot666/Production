@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="ВидыИнформацииПоСотруднику" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды информации по сотруднику</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ВидыИнформацииПоСотрудникуРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Page name="ОбщаяИнформация" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общая информация</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОбщаяИнформацияРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Табельный №</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ФИО</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">НаименованиеПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ФамилияИнициалы" id="46">
+							<DataPath>Объект.ФамилияИнициалы</DataPath>
+							<ContextMenu name="ФамилияИнициалыКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ФамилияИнициалыРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<InputField name="Категория" id="57">
+							<DataPath>Объект.Категория</DataPath>
+							<ContextMenu name="КатегорияКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="КатегорияРасширеннаяПодсказка" id="59"/>
+						</InputField>
+						<InputField name="Должность" id="7">
+							<DataPath>Объект.Должность</DataPath>
+							<ContextMenu name="ДолжностьКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<UsualGroup name="ИнформацияОбУвольнение" id="49">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информация об увольнение</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ИнформацияОбУвольнениеРасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<CheckBoxField name="Уволен" id="51">
+									<DataPath>Объект.Уволен</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="УволенКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="УволенРасширеннаяПодсказка" id="53"/>
+								</CheckBoxField>
+								<InputField name="ДатаУвольнения" id="54">
+									<DataPath>Объект.ДатаУвольнения</DataPath>
+									<ContextMenu name="ДатаУвольненияКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ДатаУвольненияРасширеннаяПодсказка" id="56"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СкладскаяИнформация" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Складская информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация по складам которые по умолчанию используются в формах программы,  сверках с 1С 7.7 и пр.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СкладскаяИнформацияРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<InputField name="СкладСырья" id="16">
+							<DataPath>Объект.СкладСырья</DataPath>
+							<ContextMenu name="СкладСырьяКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="СкладСырьяРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="СкладПродукции" id="19">
+							<DataPath>Объект.СкладПродукции</DataPath>
+							<ContextMenu name="СкладПродукцииКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="СкладПродукцииРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="КодСкладаДопМатериалов" id="22">
+							<DataPath>Объект.КодСкладаДопМатериалов</DataPath>
+							<ContextMenu name="КодСкладаДопМатериаловКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="КодСкладаДопМатериаловРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="КадроваяИнформация" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кадровая информация</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КадроваяИнформацияРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<InputField name="ДатаРождения" id="33">
+							<DataPath>Объект.ДатаРождения</DataPath>
+							<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="Пол" id="36">
+							<DataPath>Объект.Пол</DataPath>
+							<ContextMenu name="ПолКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="Образование" id="39">
+							<DataPath>Объект.Образование</DataPath>
+							<ContextMenu name="ОбразованиеКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ОбразованиеРасширеннаяПодсказка" id="41"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ПрочаяИнформация" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочая информация</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПрочаяИнформацияРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<InputField name="ВодительскоеУдостоверение" id="13">
+							<DataPath>Объект.ВодительскоеУдостоверение</DataPath>
+							<ContextMenu name="ВодительскоеУдостоверениеКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ВодительскоеУдостоверениеРасширеннаяПодсказка" id="15"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СлужебнаяИнформация" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Служебная информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Служебная (административная) информация, сюда не лезть, тут только для Администратора</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СлужебнаяИнформацияРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="Пользователь" id="10">
+							<DataPath>Объект.Пользователь</DataPath>
+							<ContextMenu name="ПользовательКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="12"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Сотрудники</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

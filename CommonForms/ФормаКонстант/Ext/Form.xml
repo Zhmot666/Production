@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="РазделыСлужебнойИнформации" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделы служебной информации</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="РазделыСлужебнойИнформацииРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<Page name="ДанныеОрганизации" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные организации</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДанныеОрганизацииРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<InputField name="НаименованиеОрганизации" id="1">
+							<DataPath>НаборКонстант.НаименованиеОрганизации</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеОрганизацииКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НаименованиеОрганизацииРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="ЮридическийАдрес" id="36">
+							<DataPath>НаборКонстант.ЮридическийАдрес</DataPath>
+							<ContextMenu name="ЮридическийАдресКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ЮридическийАдресРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="УНП" id="33">
+							<DataPath>НаборКонстант.УНП</DataPath>
+							<ContextMenu name="УНПКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="УНПРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="Руководитель" id="18">
+							<DataPath>НаборКонстант.Руководитель</DataPath>
+							<ContextMenu name="РуководительКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="20"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ДанныеДляПечатныхФорм" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные для печатных форм</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДанныеДляПечатныхФормРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<InputField name="НачальникПроизводства" id="21">
+							<DataPath>НаборКонстант.НачальникПроизводства</DataPath>
+							<ContextMenu name="НачальникПроизводстваКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="НачальникПроизводстваРасширеннаяПодсказка" id="23"/>
+						</InputField>
+						<InputField name="ОтпускРазрешил" id="47">
+							<DataPath>НаборКонстант.ОтпускРазрешил</DataPath>
+							<ContextMenu name="ОтпускРазрешилКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ОтпускРазрешилРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="ГрузСдал" id="50">
+							<DataPath>НаборКонстант.ГрузСдал</DataPath>
+							<ContextMenu name="ГрузСдалКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ГрузСдалРасширеннаяПодсказка" id="52"/>
+						</InputField>
+						<InputField name="ОтветсвенныйЗаКалькуляцию" id="80">
+							<DataPath>НаборКонстант.ОтветсвенныйЗаКалькуляцию</DataPath>
+							<ContextMenu name="ОтветсвенныйЗаКалькуляциюКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ОтветсвенныйЗаКалькуляциюРасширеннаяПодсказка" id="82"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ТехническиеДанные" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Технические данные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ТехническиеДанныеРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<CheckBoxField name="КонтрольОтрицательныхОстатков" id="4">
+							<DataPath>НаборКонстант.КонтрольОтрицательныхОстатков</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КонтрольОтрицательныхОстатковКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="КонтрольОтрицательныхОстатковРасширеннаяПодсказка" id="6"/>
+						</CheckBoxField>
+						<CheckBoxField name="РасчетЗарплаты" id="7">
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РасчетЗарплатыКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="РасчетЗарплатыРасширеннаяПодсказка" id="9"/>
+						</CheckBoxField>
+						<CheckBoxField name="ФильтрацияПроизводства" id="24">
+							<DataPath>НаборКонстант.ФильтрацияПроизводства</DataPath>
+							<UserVisible>
+								<xr:Common>true</xr:Common>
+								<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+								<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+								<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+								<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+								<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+								<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+								<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+								<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+							</UserVisible>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ФильтрацияПроизводстваКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ФильтрацияПроизводстваРасширеннаяПодсказка" id="26"/>
+						</CheckBoxField>
+						<CheckBoxField name="СуммовойУчет" id="30">
+							<DataPath>НаборКонстант.СуммовойУчет</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СуммовойУчетКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="СуммовойУчетРасширеннаяПодсказка" id="32"/>
+						</CheckBoxField>
+						<CheckBoxField name="БлокировкаБД" id="27">
+							<DataPath>НаборКонстант.БлокировкаБД</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="БлокировкаБДКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="БлокировкаБДРасширеннаяПодсказка" id="29"/>
+						</CheckBoxField>
+						<UsualGroup name="ЗапретРедактированияДокументов" id="16">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запрет редактирования документов</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЗапретРедактированияДокументовРасширеннаяПодсказка" id="17"/>
+							<ChildItems>
+								<CheckBoxField name="ЗапретРедактированияПоДате" id="10">
+									<DataPath>НаборКонстант.ЗапретРедактированияПоДате</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапретРедактированияПоДатеКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ЗапретРедактированияПоДатеРасширеннаяПодсказка" id="12"/>
+								</CheckBoxField>
+								<InputField name="ДатаЗапретаРедактирования" id="13">
+									<DataPath>НаборКонстант.ДатаЗапретаРедактирования</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаЗапретаРедактированияКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ДатаЗапретаРедактированияРасширеннаяПодсказка" id="15"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ЧислоСекундВСутках" id="64">
+							<DataPath>НаборКонстант.ЧислоСекундВСутках</DataPath>
+							<ContextMenu name="ЧислоСекундВСуткахКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ЧислоСекундВСуткахРасширеннаяПодсказка" id="66"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="РегистрационныеДанные" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рег. данные в других ситетмах</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрационные данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="РегистрационныеДанныеРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<UsualGroup name="База1С77" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База1С 7.7</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База1 с77</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="База1С77РасширеннаяПодсказка" id="68"/>
+							<ChildItems>
+								<InputField name="ПутьКБазе1С77" id="53">
+									<DataPath>НаборКонстант.ПутьКБазе1С77</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПутьКБазе1С77КонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ПутьКБазе1С77РасширеннаяПодсказка" id="55"/>
+									<Events>
+										<Event name="StartChoice">ПутьКБазе1С77НачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="Пользователь1С77" id="58">
+									<DataPath>НаборКонстант.Пользователь1С77</DataPath>
+									<ContextMenu name="Пользователь1С77КонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="Пользователь1С77РасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="Пароль1С77" id="61">
+									<DataPath>НаборКонстант.Пароль1С77</DataPath>
+									<ContextMenu name="Пароль1С77КонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="Пароль1С77РасширеннаяПодсказка" id="63"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ДатаМарк" id="69">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>DataMark</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата марк</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ДатаМаркРасширеннаяПодсказка" id="70"/>
+							<ChildItems>
+								<InputField name="АдресДатаМарк" id="71">
+									<DataPath>НаборКонстант.АдресДатаМарк</DataPath>
+									<ContextMenu name="АдресДатаМаркКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="АдресДатаМаркРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="ЛогинДатаМарк" id="74">
+									<DataPath>НаборКонстант.ЛогинДатаМарк</DataPath>
+									<ContextMenu name="ЛогинДатаМаркКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ЛогинДатаМаркРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="ПарольДатаМарк" id="77">
+									<DataPath>НаборКонстант.ПарольДатаМарк</DataPath>
+									<ContextMenu name="ПарольДатаМаркКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ПарольДатаМаркРасширеннаяПодсказка" id="79"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

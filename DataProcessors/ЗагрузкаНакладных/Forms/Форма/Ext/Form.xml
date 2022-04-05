@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Загрузка накладных</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ОбщиеСведения" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие сведения</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщиеСведенияРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="68">
+					<DataPath>Объект.ДатаНачала</DataPath>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ДатаОкончания" id="71">
+					<DataPath>Объект.ДатаОкончания</DataPath>
+					<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<Button name="ЗаполнитьСписок" id="76">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗаполнитьСписок</CommandName>
+					<ExtendedTooltip name="ЗаполнитьСписокРасширеннаяПодсказка" id="77"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация1" id="1">
+			<Font ref="style:NormalTextFont" height="18" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка накладных</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<InputField name="ФайлЗагрузки" id="34">
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ФайлЗагрузкиКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ФайлЗагрузкиРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<Table name="СписокНакладных" id="37">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СписокНакладных</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список доступных накладных</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокНакладныхКонтекстноеМеню" id="38"/>
+			<AutoCommandBar name="СписокНакладныхКоманднаяПанель" id="39">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокНакладныхРасширеннаяПодсказка" id="40"/>
+			<SearchStringAddition name="СписокНакладныхСтрокаПоиска" id="41">
+				<AdditionSource>
+					<Item>СписокНакладных</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНакладныхСтрокаПоискаКонтекстноеМеню" id="42"/>
+				<ExtendedTooltip name="СписокНакладныхСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокНакладныхСостояниеПросмотра" id="44">
+				<AdditionSource>
+					<Item>СписокНакладных</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНакладныхСостояниеПросмотраКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="СписокНакладныхСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокНакладныхУправлениеПоиском" id="47">
+				<AdditionSource>
+					<Item>СписокНакладных</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНакладныхУправлениеПоискомКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="СписокНакладныхУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокНакладныхНомерСтроки" id="50">
+					<DataPath>Объект.СписокНакладных.LineNumber</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокНакладныхНомерСтрокиКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="СписокНакладныхНомерСтрокиРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+				<CheckBoxField name="СписокНакладныхСтатусЗагрузки" id="65">
+					<DataPath>Объект.СписокНакладных.СтатусЗагрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загружена</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокНакладныхСтатусЗагрузкиКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="СписокНакладныхСтатусЗагрузкиРасширеннаяПодсказка" id="67"/>
+				</CheckBoxField>
+				<InputField name="СписокНакладныхНомерНакладной" id="53">
+					<DataPath>Объект.СписокНакладных.НомерНакладной</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокНакладныхНомерНакладнойКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СписокНакладныхНомерНакладнойРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="СписокНакладныхДатаНакладной" id="56">
+					<DataPath>Объект.СписокНакладных.ДатаНакладной</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокНакладныхДатаНакладнойКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СписокНакладныхДатаНакладнойРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="СписокНакладныхКонтрагент" id="59">
+					<DataPath>Объект.СписокНакладных.Контрагент</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокНакладныхКонтрагентКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СписокНакладныхКонтрагентРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="СписокНакладныхСтатусНакладной" id="62">
+					<DataPath>Объект.СписокНакладных.СтатусНакладной</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокНакладныхСтатусНакладнойКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СписокНакладныхСтатусНакладнойРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="Загрузить" id="4">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Загрузить</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ЗагрузитьРасширеннаяПодсказка" id="5"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаНакладных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Загрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">СписокНакладных</AssociatedTableElementId>
+		</Command>
+		<Command name="ЗаполнитьСписок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСписок</Action>
+		</Command>
+	</Commands>
+</Form>

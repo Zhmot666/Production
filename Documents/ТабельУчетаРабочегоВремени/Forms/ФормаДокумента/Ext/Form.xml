@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Месяц" id="7">
+			<DataPath>Объект.Месяц</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МесяцКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МесяцРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Год" id="10">
+			<DataPath>Объект.Год</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ГодКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ГодРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Подразделение" id="13">
+			<DataPath>Объект.Подразделение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Автор" id="157">
+			<DataPath>Объект.Автор</DataPath>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</UserVisible>
+			<ContextMenu name="АвторКонтекстноеМеню" id="158"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="159"/>
+		</InputField>
+		<UsualGroup name="ФормулаИПример" id="155">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формула и пример</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ФормулаИПримерРасширеннаяПодсказка" id="156"/>
+			<ChildItems>
+				<InputField name="ФормулаЗаполнения" id="134">
+					<DataPath>Объект.ФормулаЗаполнения</DataPath>
+					<ContextMenu name="ФормулаЗаполненияКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="ФормулаЗаполненияРасширеннаяПодсказка" id="136"/>
+				</InputField>
+				<LabelDecoration name="Пример" id="152">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пример: (8-8-8-8-8-В-В)</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПримерКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="154"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Табель" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Табель</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табель</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабельКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="ТабельКоманднаяПанель" id="18">
+				<ChildItems>
+					<Button name="ТабельЗаполнитьПоФормуле" id="137">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьПоФормуле</CommandName>
+						<ExtendedTooltip name="ТабельЗаполнитьПоФормулеРасширеннаяПодсказка" id="138"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТабельРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="ТабельСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>Табель</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабельСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ТабельСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабельСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>Табель</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабельСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ТабельСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабельУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>Табель</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабельУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ТабельУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТабельНомерСтроки" id="29">
+					<DataPath>Объект.Табель.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабельНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТабельНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="ТабельныйНомер" id="128">
+					<DataPath>Объект.Табель.ФИО.Code</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Табельный номер</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабельныйНомерКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="ТабельныйНомерРасширеннаяПодсказка" id="130"/>
+				</InputField>
+				<InputField name="ТабельФИО" id="32">
+					<DataPath>Объект.Табель.ФИО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабельФИОКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТабельФИОРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="Должность" id="131">
+					<DataPath>Объект.Табель.ФИО.Должность</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="133"/>
+				</InputField>
+				<InputField name="ТабельЧ1" id="35">
+					<DataPath>Объект.Табель.Ч1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ1КонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТабельЧ1РасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ТабельЧ2" id="38">
+					<DataPath>Объект.Табель.Ч2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ2КонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТабельЧ2РасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ТабельЧ3" id="41">
+					<DataPath>Объект.Табель.Ч3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ3КонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТабельЧ3РасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ТабельЧ4" id="44">
+					<DataPath>Объект.Табель.Ч4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ4КонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТабельЧ4РасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ТабельЧ5" id="47">
+					<DataPath>Объект.Табель.Ч5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ5КонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТабельЧ5РасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ТабельЧ6" id="50">
+					<DataPath>Объект.Табель.Ч6</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ6КонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТабельЧ6РасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ТабельЧ7" id="53">
+					<DataPath>Объект.Табель.Ч7</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ7КонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ТабельЧ7РасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ТабельЧ8" id="56">
+					<DataPath>Объект.Табель.Ч8</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ8КонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ТабельЧ8РасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ТабельЧ9" id="59">
+					<DataPath>Объект.Табель.Ч9</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ9КонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ТабельЧ9РасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ТабельЧ10" id="62">
+					<DataPath>Объект.Табель.Ч10</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ10КонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ТабельЧ10РасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ТабельЧ11" id="65">
+					<DataPath>Объект.Табель.Ч11</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ11КонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ТабельЧ11РасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="ТабельЧ12" id="68">
+					<DataPath>Объект.Табель.Ч12</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ12КонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ТабельЧ12РасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ТабельЧ13" id="71">
+					<DataPath>Объект.Табель.Ч13</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ13КонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ТабельЧ13РасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="ТабельЧ14" id="74">
+					<DataPath>Объект.Табель.Ч14</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ14КонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ТабельЧ14РасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="ТабельЧ15" id="77">
+					<DataPath>Объект.Табель.Ч15</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ15КонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ТабельЧ15РасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="ТабельЧ16" id="80">
+					<DataPath>Объект.Табель.Ч16</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ16КонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ТабельЧ16РасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="ТабельЧ17" id="83">
+					<DataPath>Объект.Табель.Ч17</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ17КонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ТабельЧ17РасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="ТабельЧ18" id="86">
+					<DataPath>Объект.Табель.Ч18</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ18КонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ТабельЧ18РасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<InputField name="ТабельЧ19" id="89">
+					<DataPath>Объект.Табель.Ч19</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ19КонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ТабельЧ19РасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="ТабельЧ20" id="92">
+					<DataPath>Объект.Табель.Ч20</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ20КонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ТабельЧ20РасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="ТабельЧ21" id="95">
+					<DataPath>Объект.Табель.Ч21</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ21КонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ТабельЧ21РасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<InputField name="ТабельЧ22" id="98">
+					<DataPath>Объект.Табель.Ч22</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ22КонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ТабельЧ22РасширеннаяПодсказка" id="100"/>
+				</InputField>
+				<InputField name="ТабельЧ23" id="101">
+					<DataPath>Объект.Табель.Ч23</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ23КонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ТабельЧ23РасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<InputField name="ТабельЧ24" id="104">
+					<DataPath>Объект.Табель.Ч24</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ24КонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="ТабельЧ24РасширеннаяПодсказка" id="106"/>
+				</InputField>
+				<InputField name="ТабельЧ25" id="107">
+					<DataPath>Объект.Табель.Ч25</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ25КонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="ТабельЧ25РасширеннаяПодсказка" id="109"/>
+				</InputField>
+				<InputField name="ТабельЧ26" id="110">
+					<DataPath>Объект.Табель.Ч26</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ26КонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ТабельЧ26РасширеннаяПодсказка" id="112"/>
+				</InputField>
+				<InputField name="ТабельЧ27" id="113">
+					<DataPath>Объект.Табель.Ч27</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ27КонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="ТабельЧ27РасширеннаяПодсказка" id="115"/>
+				</InputField>
+				<InputField name="ТабельЧ28" id="116">
+					<DataPath>Объект.Табель.Ч28</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ28КонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="ТабельЧ28РасширеннаяПодсказка" id="118"/>
+				</InputField>
+				<InputField name="ТабельЧ29" id="119">
+					<DataPath>Объект.Табель.Ч29</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ29КонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ТабельЧ29РасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="ТабельЧ30" id="122">
+					<DataPath>Объект.Табель.Ч30</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ30КонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="ТабельЧ30РасширеннаяПодсказка" id="124"/>
+				</InputField>
+				<InputField name="ТабельЧ31" id="125">
+					<DataPath>Объект.Табель.Ч31</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>5</Width>
+					<ContextMenu name="ТабельЧ31КонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ТабельЧ31РасширеннаяПодсказка" id="127"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ТабельУчетаРабочегоВремени</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПоФормуле" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по формуле</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по формуле</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

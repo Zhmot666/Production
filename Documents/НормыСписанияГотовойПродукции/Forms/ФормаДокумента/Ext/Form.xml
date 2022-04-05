@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Номенклатура" id="7">
+			<DataPath>Объект.Номенклатура</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">НоменклатураПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Автор" id="10">
+			<DataPath>Объект.Автор</DataPath>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</UserVisible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АвторКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="ГотоваяПродукция" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ГотоваяПродукция</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готовая продукция</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ГотоваяПродукцияКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="ГотоваяПродукцияКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="ГотоваяПродукцияРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="ГотоваяПродукцияСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>ГотоваяПродукция</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ГотоваяПродукцияСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ГотоваяПродукцияСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ГотоваяПродукцияСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>ГотоваяПродукция</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ГотоваяПродукцияСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ГотоваяПродукцияСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ГотоваяПродукцияУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>ГотоваяПродукция</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ГотоваяПродукцияУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ГотоваяПродукцияУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ГотоваяПродукцияНомерСтроки" id="29">
+					<DataPath>Объект.ГотоваяПродукция.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГотоваяПродукцияНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ГотоваяПродукцияНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="ГотоваяПродукцияНижнийПредел" id="32">
+					<DataPath>Объект.ГотоваяПродукция.НижнийПредел</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГотоваяПродукцияНижнийПределКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ГотоваяПродукцияНижнийПределРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ГотоваяПродукцияВерхнийПредел" id="35">
+					<DataPath>Объект.ГотоваяПродукция.ВерхнийПредел</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГотоваяПродукцияВерхнийПределКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ГотоваяПродукцияВерхнийПределРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ГотоваяПродукцияЦельСписания" id="38">
+					<DataPath>Объект.ГотоваяПродукция.ЦельСписания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГотоваяПродукцияЦельСписанияКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ГотоваяПродукцияЦельСписанияРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ГотоваяПродукцияСтароеКоличество" id="47">
+					<DataPath>Объект.ГотоваяПродукция.СтароеКоличество</DataPath>
+					<Enabled>false</Enabled>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГотоваяПродукцияСтароеКоличествоКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ГотоваяПродукцияСтароеКоличествоРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ГотоваяПродукцияНовоеКоличество" id="44">
+					<DataPath>Объект.ГотоваяПродукция.НовоеКоличество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ГотоваяПродукцияНовоеКоличествоКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ГотоваяПродукцияНовоеКоличествоРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Комментарий" id="13">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.НормыСписанияГотовойПродукции</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.НормыСписанияПродукции.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>true</xr:Common>
+					<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+					<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+					<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+					<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+					<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+					<xr:Value name="8a2f45d4-5260-43ef-970b-b63b9648dce6">true</xr:Value>
+					<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+					<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ТарифнаяСтавка" id="7">
+			<DataPath>Объект.ТарифнаяСтавка</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТарифнаяСтавкаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТарифнаяСтавкаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Автор" id="94">
+			<DataPath>Объект.Автор</DataPath>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</UserVisible>
+			<ContextMenu name="АвторКонтекстноеМеню" id="95"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="96"/>
+		</InputField>
+		<Table name="Сотрудники" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Сотрудники</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список сотрудников</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СотрудникиКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="СотрудникиКоманднаяПанель" id="12">
+				<ChildItems>
+					<Button name="СотрудникиЗаполнитьСотрудников" id="77">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьСотрудников</CommandName>
+						<ExtendedTooltip name="СотрудникиЗаполнитьСотрудниковРасширеннаяПодсказка" id="78"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СотрудникиРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="СотрудникиСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Сотрудники</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СотрудникиСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СотрудникиСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СотрудникиСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Сотрудники</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СотрудникиСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СотрудникиСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СотрудникиУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Сотрудники</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СотрудникиУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СотрудникиУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СотрудникиНомерСтроки" id="23">
+					<DataPath>Объект.Сотрудники.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СотрудникиНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СотрудникиНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="Должность" id="79">
+					<DataPath>Объект.Сотрудники.Сотрудник.Должность</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжностьКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="81"/>
+				</InputField>
+				<InputField name="СотрудникиСотрудник" id="26">
+					<DataPath>Объект.Сотрудники.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СотрудникиСотрудникКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СотрудникиСотрудникРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="СотрудникиКоличествоЕдиниц" id="29">
+					<DataPath>Объект.Сотрудники.КоличествоЕдиниц</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество штатных единиц</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СотрудникиКоличествоЕдиницКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СотрудникиКоличествоЕдиницРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СотрудникиТарифныеРазряды" id="32">
+					<DataPath>Объект.Сотрудники.ТарифныеРазряды</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СотрудникиТарифныеРазрядыКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СотрудникиТарифныеРазрядыРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="СотрудникиТарифныйОклад" id="35">
+					<DataPath>Объект.Сотрудники.ТарифныйОклад</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СотрудникиТарифныйОкладКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СотрудникиТарифныйОкладРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<ColumnGroup name="СписокСотрудников" id="82">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Повышения предусмотренные положением по оплате  руда (размер и сумма) в соответствии с законодательством в диапазоне 0-300%</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<ExtendedTooltip name="СписокСотрудниковРасширеннаяПодсказка" id="83"/>
+					<ChildItems>
+						<ColumnGroup name="ЗаКатегорию" id="84">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>за наличие присвоенной в установленном порядке квалификационной категории</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ЗаКатегориюРасширеннаяПодсказка" id="85"/>
+							<ChildItems>
+								<InputField name="СотрудникиЗаКатегориюПроцент" id="38">
+									<DataPath>Объект.Сотрудники.ЗаКатегориюПроцент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СотрудникиЗаКатегориюПроцентКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="СотрудникиЗаКатегориюПроцентРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="СотрудникиЗаКатегориюСумма" id="41">
+									<DataPath>Объект.Сотрудники.ЗаКатегориюСумма</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СотрудникиЗаКатегориюСуммаКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="СотрудникиЗаКатегориюСуммаРасширеннаяПодсказка" id="43"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="Другое" id="86">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>другие повышения</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ДругоеРасширеннаяПодсказка" id="87"/>
+							<ChildItems>
+								<InputField name="СотрудникиДругоеПроцент" id="44">
+									<DataPath>Объект.Сотрудники.ДругоеПроцент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СотрудникиДругоеПроцентКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="СотрудникиДругоеПроцентРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="СотрудникиДругоеСумма" id="47">
+									<DataPath>Объект.Сотрудники.ДругоеСумма</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СотрудникиДругоеСуммаКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="СотрудникиДругоеСуммаРасширеннаяПодсказка" id="49"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="МерыСтимулирования" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительная мера стимулирования труда в соответствии с Декретом №29</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<ExtendedTooltip name="МерыСтимулированияРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<InputField name="СотрудникиСтимулированиеПроцент" id="50">
+							<DataPath>Объект.Сотрудники.СтимулированиеПроцент</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СотрудникиСтимулированиеПроцентКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="СотрудникиСтимулированиеПроцентРасширеннаяПодсказка" id="52"/>
+						</InputField>
+						<InputField name="СотрудникиСтимулированиеСумма" id="53">
+							<DataPath>Объект.Сотрудники.СтимулированиеСумма</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СотрудникиСтимулированиеСуммаКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="СотрудникиСтимулированиеСуммаРасширеннаяПодсказка" id="55"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ДругиеПовышения" id="90">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Другие повышения предусмотренные актами</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<ExtendedTooltip name="ДругиеПовышенияРасширеннаяПодсказка" id="91"/>
+					<ChildItems>
+						<InputField name="СотрудникиДругое2Процент" id="56">
+							<DataPath>Объект.Сотрудники.Другое2Процент</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СотрудникиДругое2ПроцентКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="СотрудникиДругое2ПроцентРасширеннаяПодсказка" id="58"/>
+						</InputField>
+						<InputField name="СотрудникиДругое2Сумма" id="59">
+							<DataPath>Объект.Сотрудники.Другое2Сумма</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СотрудникиДругое2СуммаКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="СотрудникиДругое2СуммаРасширеннаяПодсказка" id="61"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="СотрудникиМесячныйОклад" id="62">
+					<DataPath>Объект.Сотрудники.МесячныйОклад</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Месячный должностной оклад (руб.)</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СотрудникиМесячныйОкладКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СотрудникиМесячныйОкладРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<ColumnGroup name="Надбавки" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Надбавки, доплаты к должностному окладу (руб.)</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<ExtendedTooltip name="НадбавкиРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<InputField name="СотрудникиНадбавкиПроцент" id="65">
+							<DataPath>Объект.Сотрудники.НадбавкиПроцент</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СотрудникиНадбавкиПроцентКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="СотрудникиНадбавкиПроцентРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<InputField name="СотрудникиНадбавкиСумма" id="68">
+							<DataPath>Объект.Сотрудники.НадбавкиСумма</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СотрудникиНадбавкиСуммаКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="СотрудникиНадбавкиСуммаРасширеннаяПодсказка" id="70"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="СотрудникиМесячныйФЗП" id="71">
+					<DataPath>Объект.Сотрудники.МесячныйФЗП</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Месячный фонд заработной платы (руб.)</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СотрудникиМесячныйФЗПКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="СотрудникиМесячныйФЗПРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="СотрудникиПримечание" id="74">
+					<DataPath>Объект.Сотрудники.Примечание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СотрудникиПримечаниеКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="СотрудникиПримечаниеРасширеннаяПодсказка" id="76"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ШтатноеРасписание</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьСотрудников" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить сотрудников</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить сотрудников</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

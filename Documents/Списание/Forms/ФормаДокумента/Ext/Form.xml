@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="КнопкиПечати" id="77">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</Title>
+				<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
+				<ExtendedTooltip name="КнопкиПечатиРасширеннаяПодсказка" id="78"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ДатаНомер" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата номер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата номер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДатаНомерРасширеннаяПодсказка" id="86"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Автор" id="68">
+					<DataPath>Объект.Автор</DataPath>
+					<UserVisible>
+						<xr:Common>true</xr:Common>
+						<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+						<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+						<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+						<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+						<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+						<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+						<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+						<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+						<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+						<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+						<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+						<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+						<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+						<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+						<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<ContextMenu name="АвторКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="70"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ИнформацияОбъектаПроизводства" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация объекта производства</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИнформацияОбъектаПроизводстваРасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="ОбъектПроизводства" id="7">
+					<DataPath>Объект.ОбъектПроизводства</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОбъектПроизводстваКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ОбъектПроизводстваРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="Склад" id="61">
+					<DataPath>Объект.Склад</DataPath>
+					<ContextMenu name="СкладКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="63"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ИнформацияОЧеловеке" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о человеке</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИнформацияОЧеловекеРасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<InputField name="ОтбиравшийПробу" id="10">
+					<DataPath>Объект.ОтбиравшийПробу</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтбиравшийПробуКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ОтбиравшийПробуРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Представитель" id="13">
+					<DataPath>Объект.Представитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПредставительКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ПредставительРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ИнформацияОТНПА" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о ТНПА</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИнформацияОТНПАРасширеннаяПодсказка" id="67"/>
+			<ChildItems>
+				<InputField name="ПричиныОтбораПроб" id="16">
+					<DataPath>Объект.ПричиныОтбораПроб</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПричиныОтбораПробКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПричиныОтбораПробРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ТНПА" id="19">
+					<DataPath>Объект.ТНПА</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТНПАКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ТНПАРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="МаслоТехническое" id="79">
+			<DataPath>Объект.МаслоТехническое</DataPath>
+			<ContextMenu name="МаслоТехническоеКонтекстноеМеню" id="80"/>
+			<ExtendedTooltip name="МаслоТехническоеРасширеннаяПодсказка" id="81"/>
+		</InputField>
+		<Table name="Пробы" id="22">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Пробы</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пробы</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПробыКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="ПробыКоманднаяПанель" id="24"/>
+			<ExtendedTooltip name="ПробыРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="ПробыСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>Пробы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПробыСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ПробыСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПробыСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>Пробы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПробыСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ПробыСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПробыУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>Пробы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПробыУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ПробыУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПробыНомерСтроки" id="35">
+					<DataPath>Объект.Пробы.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПробыНомерСтрокиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПробыНомерСтрокиРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<InputField name="ПробыНаименованиеПроб" id="38">
+					<DataPath>Объект.Пробы.НаименованиеПроб</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПробыНаименованиеПробКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПробыНаименованиеПробРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="ChoiceProcessing">ПробыНаименованиеПробОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПробыЕдиницыИзмерения" id="41">
+					<DataPath>Объект.Пробы.НаименованиеПроб.ЕдиницыИзмерения</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПробыЕдиницыИзмеренияКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПробыЕдиницыИзмеренияРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ПробыТНПА1" id="74">
+					<DataPath>Объект.Пробы.ТНПА1</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТНПА, устанавливающий требования к пробе</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПробыТНПА1КонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ПробыТНПА1РасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<ColumnGroup name="ДатыИзготовленияРозлива" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Даты изготовления розлива</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДатыИзготовленияРозливаРасширеннаяПодсказка" id="88"/>
+					<ChildItems>
+						<InputField name="ПробыДатаИзготовления" id="44">
+							<DataPath>Объект.Пробы.ДатаИзготовления</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=дд.ММ.гггг</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=дд.ММ.гггг</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ПробыДатаИзготовленияКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ПробыДатаИзготовленияРасширеннаяПодсказка" id="46"/>
+						</InputField>
+						<InputField name="ПробыДатаРозлива" id="82">
+							<DataPath>Объект.Пробы.ДатаРозлива</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПробыДатаРозливаКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="ПробыДатаРозливаРасширеннаяПодсказка" id="84"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ХарактеристикиПартии" id="89">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристики партии</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ХарактеристикиПартииРасширеннаяПодсказка" id="90"/>
+					<ChildItems>
+						<InputField name="ПробыВеличинаПартии" id="47">
+							<DataPath>Объект.Пробы.ВеличинаПартии</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПробыВеличинаПартииКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ПробыВеличинаПартииРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="ПробыНомерПартии" id="50">
+							<DataPath>Объект.Пробы.НомерПартии</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер
+парти</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПробыНомерПартииКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ПробыНомерПартииРасширеннаяПодсказка" id="52"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ПробыВесПробы" id="53">
+					<DataPath>Объект.Пробы.ВесПробы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вес (кол-во) пробы</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПробыВесПробыКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПробыВесПробыРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ПробыЦельИсследования" id="56">
+					<DataPath>Объект.Пробы.ЦельИсследования</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цель
+исследования</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПробыЦельИсследованияКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ПробыЦельИсследованияРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ПробыТНПАНаОтборПроб" id="71">
+					<DataPath>Объект.Пробы.ТНПАНаОтборПроб</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПробыТНПАНаОтборПробКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ПробыТНПАНаОтборПробРасширеннаяПодсказка" id="73"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Списание</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.Остатки.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>true</xr:Common>
+					<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+					<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

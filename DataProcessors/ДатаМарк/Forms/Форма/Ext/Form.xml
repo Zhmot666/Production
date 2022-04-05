@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Button name="Логин" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Логин</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<UsualGroup name="Группа1" id="29">
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<InputField name="Серия" id="20">
+					<DataPath>Объект.Серия</DataPath>
+					<ContextMenu name="СерияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СерияРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="НачальныйНомер" id="23">
+					<DataPath>Объект.НачальныйНомер</DataPath>
+					<ContextMenu name="НачальныйНомерКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="НачальныйНомерРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="КонечныйНомер" id="26">
+					<DataPath>Объект.КонечныйНомер</DataPath>
+					<ContextMenu name="КонечныйНомерКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КонечныйНомерРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Товар" id="17">
+			<DataPath>Объект.Товар</DataPath>
+			<ContextMenu name="ТоварКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ТоварРасширеннаяПодсказка" id="19"/>
+		</InputField>
+		<InputField name="Токен" id="3">
+			<DataPath>Объект.Токен</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ТокенКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ТокенРасширеннаяПодсказка" id="5"/>
+		</InputField>
+		<Button name="Логаут" id="6">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Логаут</CommandName>
+			<ExtendedTooltip name="ЛогаутРасширеннаяПодсказка" id="7"/>
+		</Button>
+		<RadioButtonField name="ТестовыйРабочий" id="14">
+			<DataPath>Объект.ТестовыйРабочий</DataPath>
+			<RadioButtonType>Auto</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тестовый контур</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">1</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Рабочий контур</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:decimal">2</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ТестовыйРабочийКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="ТестовыйРабочийРасширеннаяПодсказка" id="16"/>
+		</RadioButtonField>
+		<InputField name="ТестовыйКОнтур" id="8">
+			<DataPath>Объект.ТестовыйКОнтур</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ТестовыйКОнтурКонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="ТестовыйКОнтурРасширеннаяПодсказка" id="10"/>
+		</InputField>
+		<InputField name="РабочийКонтур" id="11">
+			<DataPath>Объект.РабочийКонтур</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="РабочийКонтурКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="РабочийКонтурРасширеннаяПодсказка" id="13"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДатаМарк</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Логин" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Логин</Action>
+		</Command>
+		<Command name="Логаут" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логаут</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логаут</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Логаут</Action>
+		</Command>
+	</Commands>
+</Form>

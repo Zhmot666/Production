@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<CommandsVisibility>
+		<Command name="DocumentJournal.ПоступлениеМатериаловИСырья.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПодсистемаПроизводство">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Производство.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПодсистемаПроизводство">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВнутреннееПеремещение.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПодсистемаПроизводство">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПоступлениеМатериалов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Списание.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПодсистемаПроизводство">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Склад.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:04aa4b69-23c9-4577-8253-ef36d5da675c">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:1a2a914d-4f8e-4357-974c-e25f6bb9b93c">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ТабельУчетаРабочегоВремени.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПоступлениеКонтрольныхЗнаков.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.СписаниеВспомогательныхСредств.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="DocumentJournal.ПоступлениеМатериаловИСырья.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Производство.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.Списание.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ВнутреннееПеремещение.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УчетТрудозатрат.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПоступлениеМатериалов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Списание.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.Остатки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Склад.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:04aa4b69-23c9-4577-8253-ef36d5da675c">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:1a2a914d-4f8e-4357-974c-e25f6bb9b93c">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ТабельУчетаРабочегоВремени.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПоступлениеКонтрольныхЗнаков.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.СписаниеВспомогательныхСредств.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

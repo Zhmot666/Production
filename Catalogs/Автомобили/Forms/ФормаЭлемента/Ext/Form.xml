@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ГосЗнак" id="7">
+			<DataPath>Объект.ГосЗнак</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ГосЗнакКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ГосЗнакРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="Собственный" id="13">
+			<DataPath>Объект.Собственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СобственныйКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СобственныйРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">СобственныйПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<UsualGroup name="НормыРасходаТоплива" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нормы расхода топлива</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НормыРасходаТопливаРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<InputField name="НормаРасходаТопливаЛето" id="33">
+					<DataPath>Объект.НормаРасходаТопливаЛето</DataPath>
+					<ContextMenu name="НормаРасходаТопливаЛетоКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="НормаРасходаТопливаЛетоРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="НормаРасходаТопливаЗима" id="10">
+					<DataPath>Объект.НормаРасходаТопливаЗима</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НормаРасходаТопливаЗимаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="НормаРасходаТопливаЗимаРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ВладелецТранспорта" id="28">
+			<DataPath>Объект.ВладелецТранспорта</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВладелецТранспортаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ВладелецТранспортаРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Водитель" id="25">
+			<DataPath>Объект.Водитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВодительКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ВодительРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<CheckBoxField name="Прицеп" id="16">
+			<DataPath>Объект.Прицеп</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПрицепКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПрицепРасширеннаяПодсказка" id="18"/>
+			<Events>
+				<Event name="OnChange">ПрицепПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="МаркаПрицепа" id="19">
+			<DataPath>Объект.МаркаПрицепа</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МаркаПрицепаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="МаркаПрицепаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ГосЗнакПрицепа" id="22">
+			<DataPath>Объект.ГосЗнакПрицепа</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ГосЗнакПрицепаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ГосЗнакПрицепаРасширеннаяПодсказка" id="24"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Автомобили</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

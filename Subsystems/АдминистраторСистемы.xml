@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<Subsystem uuid="be01f003-1230-4264-ad89-9ec65d2b6b4b">
+		<Properties>
+			<Name>АдминистраторСистемы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администратор системы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.Администратор</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Остатки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Производство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВнутреннееПеремещение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Отгрузка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусОтгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Заявка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусПроизводства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Списание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НормыРасхода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НормыРасхода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПутевойЛистЛегковогоАвтомобиля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОстатков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Вредность</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаКонстант</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипСклада</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Заявка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаОтчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаПечатиДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Прейскурант</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПрейскурантЦен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособПодбора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.Начисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЧасыРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Месяцы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДляТУРВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Администратор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Менеджер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Экономист</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПутевыеЛисты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Производство</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Бухгалтерия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Кадры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Зарплата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЕдиницыИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Склад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОбъектыПроизводства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПричиныОтбора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЦелиИсследований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТНПА</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Автомобили</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Должность</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлассВредности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Подразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПунктыРазгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыГрафиковРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПраздничныеДни</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Переносы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ЖурналПроизводстваИРеализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеМатериалов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТабельУчетаРабочегоВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриказОПриемеНаРаботу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ШтатноеРасписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ТарифныеРазряды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПереводСырьяВПродукцию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусЗаявки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ГрафикиРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТарифныеРазряды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfAccounts.Основной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетОбОтрицательныхОстатках</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Инвентаризация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаПодбора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СырьевыеЗапасы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипОтчетаОстатки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Соответствие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Скидки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Трудозатраты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДинамикаРасходаСырья</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаНакладных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СверкаОстатков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипЗадолженности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеКонтрольныхЗнаков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПричиныСписания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииМИДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Пол</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Образование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.КатегорииРаботающих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализДвиженияДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаВXML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДатаМарк</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетОбИспользованиеКонтрольныхЗнаков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.УчетУКЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусОтправкиОтчетаПоУКЗ</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

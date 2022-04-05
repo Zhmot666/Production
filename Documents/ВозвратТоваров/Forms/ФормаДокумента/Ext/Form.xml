@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Автор" id="44">
+			<DataPath>Объект.Автор</DataPath>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</UserVisible>
+			<ContextMenu name="АвторКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<InputField name="Контрагент" id="38">
+			<DataPath>Объект.Контрагент</DataPath>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="ДокументОтгрузки" id="7">
+			<DataPath>Объект.ДокументОтгрузки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДокументОтгрузкиКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДокументОтгрузкиРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="ChoiceProcessing">ДокументОтгрузкиОбработкаВыбора</Event>
+			</Events>
+		</InputField>
+		<Table name="ВозвратныеТовары" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ВозвратныеТовары</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары к возврату</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВозвратныеТоварыКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ВозвратныеТоварыКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="ВозвратныеТоварыРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ВозвратныеТоварыСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>ВозвратныеТовары</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВозвратныеТоварыСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ВозвратныеТоварыСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВозвратныеТоварыСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>ВозвратныеТовары</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВозвратныеТоварыСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ВозвратныеТоварыСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВозвратныеТоварыУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>ВозвратныеТовары</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВозвратныеТоварыУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ВозвратныеТоварыУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ВозвратныеТоварыНомерСтроки" id="23">
+					<DataPath>Объект.ВозвратныеТовары.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВозвратныеТоварыНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ВозвратныеТоварыНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ВозвратныеТоварыТовар" id="26">
+					<DataPath>Объект.ВозвратныеТовары.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВозвратныеТоварыТоварКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ВозвратныеТоварыТоварРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ВозвратныеТоварыПартия" id="29">
+					<DataPath>Объект.ВозвратныеТовары.Партия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВозвратныеТоварыПартияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ВозвратныеТоварыПартияРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ВозвратныеТоварыДатаВыпуска" id="41">
+					<DataPath>Объект.ВозвратныеТовары.ДатаВыпуска</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВозвратныеТоварыДатаВыпускаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ВозвратныеТоварыДатаВыпускаРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ВозвратныеТоварыКоличество" id="32">
+					<DataPath>Объект.ВозвратныеТовары.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВозвратныеТоварыКоличествоКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ВозвратныеТоварыКоличествоРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ВозвратныеТоварыСклад" id="35">
+					<DataPath>Объект.ВозвратныеТовары.Склад</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВозвратныеТоварыСкладКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ВозвратныеТоварыСкладРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВозвратТоваров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.Остатки.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>true</xr:Common>
+					<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+					<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

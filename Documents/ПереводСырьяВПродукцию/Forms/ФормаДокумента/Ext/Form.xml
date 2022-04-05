@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СкладСырья" id="7">
+			<DataPath>Объект.СкладСырья</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкладСырьяКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СкладСырьяРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="СкладПродукции" id="13">
+			<DataPath>Объект.СкладПродукции</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкладПродукцииКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СкладПродукцииРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Автор" id="50">
+			<DataPath>Объект.Автор</DataPath>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</UserVisible>
+			<ContextMenu name="АвторКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="52"/>
+		</InputField>
+		<Table name="СырьеПродукция" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.СырьеПродукция</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список сырья (продукции)</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СырьеПродукцияКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="СырьеПродукцияКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="СырьеПродукцияРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="СырьеПродукцияСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>СырьеПродукция</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СырьеПродукцияСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СырьеПродукцияСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СырьеПродукцияСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>СырьеПродукция</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СырьеПродукцияСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="СырьеПродукцияСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СырьеПродукцияУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>СырьеПродукция</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СырьеПродукцияУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="СырьеПродукцияУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СырьеПродукцияНомерСтроки" id="29">
+					<DataPath>Объект.СырьеПродукция.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СырьеПродукцияНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СырьеПродукцияНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="СырьеПродукцияЧтоОтправляем" id="32">
+					<DataPath>Объект.СырьеПродукция.ЧтоОтправляем</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СырьеПродукцияЧтоОтправляемКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СырьеПродукцияЧтоОтправляемРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="ChoiceProcessing">СырьеПродукцияЧтоОтправляемОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="СырьеПродукцияОстаток" id="35">
+					<DataPath>Объект.СырьеПродукция.Остаток</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СырьеПродукцияОстатокКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СырьеПродукцияОстатокРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="СырьеПродукцияСколькоОтправляем" id="38">
+					<DataPath>Объект.СырьеПродукция.СколькоОтправляем</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СырьеПродукцияСколькоОтправляемКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СырьеПродукцияСколькоОтправляемРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="СырьеПродукцияПартия" id="44">
+					<DataPath>Объект.СырьеПродукция.Партия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СырьеПродукцияПартияКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СырьеПродукцияПартияРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="СырьеПродукцияДатаИзготовления" id="47">
+					<DataPath>Объект.СырьеПродукция.ДатаИзготовления</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СырьеПродукцияДатаИзготовленияКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СырьеПродукцияДатаИзготовленияРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="СырьеПродукцияЧтоПолучаем" id="41">
+					<DataPath>Объект.СырьеПродукция.ЧтоПолучаем</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СырьеПродукцияЧтоПолучаемКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СырьеПродукцияЧтоПолучаемРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПереводСырьяВПродукцию</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.Остатки.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>true</xr:Common>
+					<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+					<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+					<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

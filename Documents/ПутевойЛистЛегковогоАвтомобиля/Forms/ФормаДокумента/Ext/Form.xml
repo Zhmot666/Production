@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Автор" id="98">
+			<DataPath>Объект.Автор</DataPath>
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаАдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ПодсистемаБухгалтерия">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаКадровыйУчет">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЛаборатория">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаМенеджер">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПроизводство">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаПутевыеЛисты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаРасчетЗарплаты">false</xr:Value>
+				<xr:Value name="Role.ПодсистемаЭкономист">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</UserVisible>
+			<ContextMenu name="АвторКонтекстноеМеню" id="99"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="100"/>
+		</InputField>
+		<UsualGroup name="Период" id="96">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="97"/>
+			<ChildItems>
+				<InputField name="ДатаС" id="7">
+					<DataPath>Объект.ДатаС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>с</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаСКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДатаСРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ДатаСПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДатаПо" id="10">
+					<DataPath>Объект.ДатаПо</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаПоКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ДатаПоРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">ДатаПоПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Автомобиль" id="13">
+			<DataPath>Объект.Автомобиль</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АвтомобильКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="АвтомобильРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Водитель" id="16">
+			<DataPath>Объект.Водитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВодительКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ВодительРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Table name="ПутевойЛист" id="23">
+			<Representation>List</Representation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HeaderHeight>2</HeaderHeight>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Выезды</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путевой лист</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПутевойЛистКонтекстноеМеню" id="24"/>
+			<AutoCommandBar name="ПутевойЛистКоманднаяПанель" id="25"/>
+			<ExtendedTooltip name="ПутевойЛистРасширеннаяПодсказка" id="26"/>
+			<SearchStringAddition name="ПутевойЛистСтрокаПоиска" id="27">
+				<AdditionSource>
+					<Item>ПутевойЛист</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПутевойЛистСтрокаПоискаКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="ПутевойЛистСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПутевойЛистСостояниеПросмотра" id="30">
+				<AdditionSource>
+					<Item>ПутевойЛист</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПутевойЛистСостояниеПросмотраКонтекстноеМеню" id="31"/>
+				<ExtendedTooltip name="ПутевойЛистСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПутевойЛистУправлениеПоиском" id="33">
+				<AdditionSource>
+					<Item>ПутевойЛист</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПутевойЛистУправлениеПоискомКонтекстноеМеню" id="34"/>
+				<ExtendedTooltip name="ПутевойЛистУправлениеПоискомРасширеннаяПодсказка" id="35"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnStartEdit">ПутевойЛистПриНачалеРедактирования</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ПутевойЛистНомерСтроки" id="36">
+					<DataPath>Объект.Выезды.LineNumber</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>2</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<ContextMenu name="ПутевойЛистНомерСтрокиКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ПутевойЛистНомерСтрокиРасширеннаяПодсказка" id="38"/>
+				</LabelField>
+				<CheckBoxField name="ПутевойЛистЗимаЛето" id="101">
+					<DataPath>Объект.Выезды.ЗимаЛето</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зима - Лето</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПутевойЛистЗимаЛетоКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ПутевойЛистЗимаЛетоРасширеннаяПодсказка" id="103"/>
+					<Events>
+						<Event name="OnChange">ПутевойЛистЗимаЛетоПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ПутевойЛистЧисло" id="39">
+					<DataPath>Объект.Выезды.Число</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>8</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<ContextMenu name="ПутевойЛистЧислоКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ПутевойЛистЧислоРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="ПутевойЛистВремяВыезда" id="42">
+					<DataPath>Объект.Выезды.ВремяВыезда</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время выезда</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистВремяВыездаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ПутевойЛистВремяВыездаРасширеннаяПодсказка" id="44"/>
+					<Events>
+						<Event name="OnChange">ПутевойЛистВремяВыездаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПутевойЛистВремяВозвращения" id="45">
+					<DataPath>Объект.Выезды.ВремяВозвращения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время возвращения</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистВремяВозвращенияКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ПутевойЛистВремяВозвращенияРасширеннаяПодсказка" id="47"/>
+					<Events>
+						<Event name="OnChange">ПутевойЛистВремяВозвращенияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПутевойЛистВНаряде" id="48">
+					<DataPath>Объект.Выезды.ВНаряде</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В наряде</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<ContextMenu name="ПутевойЛистВНарядеКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ПутевойЛистВНарядеРасширеннаяПодсказка" id="50"/>
+				</InputField>
+				<InputField name="ПутевойЛистСпидометрПриВыезде" id="51">
+					<DataPath>Объект.Выезды.СпидометрПриВыезде</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спидометр при выезде</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистСпидометрПриВыездеКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ПутевойЛистСпидометрПриВыездеРасширеннаяПодсказка" id="53"/>
+					<Events>
+						<Event name="OnChange">ПутевойЛистСпидометрПриВыездеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПутевойЛистСпидометрПриВозвращении" id="54">
+					<DataPath>Объект.Выезды.СпидометрПриВозвращении</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спидометр при возвращении</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистСпидометрПриВозвращенииКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ПутевойЛистСпидометрПриВозвращенииРасширеннаяПодсказка" id="56"/>
+					<Events>
+						<Event name="OnChange">ПутевойЛистСпидометрПриВозвращенииПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПутевойЛистПробег" id="57">
+					<DataPath>Объект.Выезды.Пробег</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пробег</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистПробегКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ПутевойЛистПробегРасширеннаяПодсказка" id="59"/>
+				</InputField>
+				<InputField name="ПутевойЛистОстатокТопливаПриВыезде" id="60">
+					<DataPath>Объект.Выезды.ОстатокТопливаПриВыезде</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остаток топлива при выезде</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистОстатокТопливаПриВыездеКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ПутевойЛистОстатокТопливаПриВыездеРасширеннаяПодсказка" id="62"/>
+					<Events>
+						<Event name="OnChange">ПутевойЛистОстатокТопливаПриВыездеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПутевойЛистОстатокТопливаПриВозвращении" id="63">
+					<DataPath>Объект.Выезды.ОстатокТопливаПриВозвращении</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остаток топлива при возвращении</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистОстатокТопливаПриВозвращенииКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ПутевойЛистОстатокТопливаПриВозвращенииРасширеннаяПодсказка" id="65"/>
+				</InputField>
+				<InputField name="ПутевойЛистЗаправленоТоплива" id="66">
+					<DataPath>Объект.Выезды.ЗаправленоТоплива</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заправлено топлива</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистЗаправленоТопливаКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ПутевойЛистЗаправленоТопливаРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="ПутевойЛистРасходТопливаПоНорме" id="69">
+					<DataPath>Объект.Выезды.РасходТопливаПоНорме</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расход топлива по норме</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистРасходТопливаПоНормеКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ПутевойЛистРасходТопливаПоНормеРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="ПутевойЛистРасходТопливаПоФакту" id="72">
+					<DataPath>Объект.Выезды.РасходТопливаПоФакту</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расход топлива по факту</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистРасходТопливаПоФактуКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ПутевойЛистРасходТопливаПоФактуРасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="OnChange">ПутевойЛистРасходТопливаПоФактуПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПутевойЛистЭкономияПерерасход" id="75">
+					<DataPath>Объект.Выезды.ЭкономияПерерасход</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экономия (перерасход)</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутевойЛистЭкономияПерерасходКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ПутевойЛистЭкономияПерерасходРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="ПустоеПоле" id="104">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПустоеПолеКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="ПустоеПолеРасширеннаяПодсказка" id="106"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПутевойЛистЛегковогоАвтомобиля</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
