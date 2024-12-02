@@ -167,7 +167,7 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Акт
-отбора проб пищевых продуктов</v8:content>
+отбора проб пищевых продуктов и возврата растительных масел в технологический цикл</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -555,10 +555,113 @@ ______________________________________________________________________[Пред�
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>23</index>
+		<indexTo>24</indexTo>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>25</index>
+		<row>
+			<columnsID>f7e1ab86-f373-4b76-bf1e-d4e09aaff5ff</columnsID>
+			<c>
+				<i>1</i>
+				<c>
+					<f>27</f>
+					<parameter>НомерСтроки</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>38</f>
+					<parameter>ВидДвиженияМасла</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>39</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>40</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>41</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>32</f>
+					<parameter>КоличествоДвижения</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>42</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>34</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>26</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>43</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>43</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>43</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>43</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>43</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>43</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>43</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>43</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>38</defaultFormatIndex>
-	<height>24</height>
-	<vgRows>24</vgRows>
+	<defaultFormatIndex>43</defaultFormatIndex>
+	<height>26</height>
+	<vgRows>26</vgRows>
 	<merge>
 		<r>1</r>
 		<c>1</c>
@@ -647,6 +750,16 @@ ______________________________________________________________________[Пред�
 			<type>Rows</type>
 			<beginRow>11</beginRow>
 			<endRow>12</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Расход</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>25</beginRow>
+			<endRow>25</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -863,6 +976,48 @@ ______________________________________________________________________[Пред�
 		<font>2</font>
 		<width>72</width>
 		<fillType>Template</fillType>
+	</format>
+	<format>
+		<font>3</font>
+		<border>0</border>
+		<width>329</width>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+		<markNegatives>false</markNegatives>
+	</format>
+	<format>
+		<border>0</border>
+		<width>101</width>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<markNegatives>false</markNegatives>
+	</format>
+	<format>
+		<border>0</border>
+		<width>169</width>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<markNegatives>false</markNegatives>
+	</format>
+	<format>
+		<border>0</border>
+		<horizontalAlignment>Right</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Block</textPlacement>
+		<markNegatives>false</markNegatives>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧЦ=15;ЧДЦ=0</v8:content>
+			</v8:item>
+		</format>
+	</format>
+	<format>
+		<border>0</border>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<markNegatives>false</markNegatives>
 	</format>
 	<format>
 		<width>72</width>

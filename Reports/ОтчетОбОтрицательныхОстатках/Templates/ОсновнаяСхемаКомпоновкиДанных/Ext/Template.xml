@@ -75,6 +75,9 @@
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:dateTime">2019-09-01T00:00:00</value>
+		</availableValue>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>

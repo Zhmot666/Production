@@ -18,6 +18,7 @@
 		<property name="ВидПродукцииВидНоменклатуры" type="xs:string"/>
 		<property name="ПризнакИзменения" type="xs:boolean"/>
 		<property name="Ответственный" type="xs:string"/>
+		<property name="НомерПартии" type="xs:string"/>
 	</objectType>
 	<objectType name="ДокументСписания">
 		<property name="НомерДокумента" type="xs:string"/>
